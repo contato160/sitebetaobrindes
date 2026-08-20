@@ -1,5 +1,6 @@
 import type { Post } from "../../posts";
 import { ctaWhatsAppHtml, produtoLink } from "../../postBlocks";
+import { getImagemProduto } from "../../imagens";
 
 export const termicosPilarCategoria: Post = {
   slug: "guia-completo-termicos-garrafas-personalizadas",
@@ -9,6 +10,11 @@ export const termicosPilarCategoria: Post = {
     "Guia completo sobre copos, canecas e garrafas térmicas personalizadas: técnicas de personalização, como calcular quantidade, prazos e diferenças entre pedido corporativo e pessoa física.",
   tipo: "pilar-categoria",
   categoriaRelacionada: "termicos",
+  // Não existe uma foto "genérica de categoria" na pasta — usamos a foto do
+  // produto mais buscado (garrafa térmica 500ml) como imagem representativa
+  // do guia. É o único repeat intencional: aparece aqui e na própria página
+  // desse produto, o que é padrão em hubs de categoria (item-destaque).
+  imagemCapa: getImagemProduto("garrafa-termica-500ml-personalizada"),
   dataPublicacao: "2026-01-15T09:00:00-03:00",
   dataAtualizacao: "2026-08-18T09:00:00-03:00",
   faq: [

@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
-import { posts, getPost, getPostsPorCategoria } from "@/lib/posts";
+import CategoryIcon from "@/components/icons/CategoryIcon";
+import { posts, getPost, getPostsPorCategoria, imagemDoPost } from "@/lib/posts";
 import { getCategoria } from "@/lib/categorias";
 import { getProdutosPorCategoria, getProduto } from "@/lib/produtos";
 import { NEGOCIO, linkWhatsApp } from "@/lib/negocio";
@@ -18,12 +20,15 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const post = getPost(params.slug);
   if (!post) return {};
+  const imagem = imagemDoPost(post);
   return {
     title: post.titulo,
     description: post.descricao,
     openGraph: {
       url: `https://${NEGOCIO.dominio}/blog/${post.slug}/`,
-      images: [{ url: "/og-cover.svg", width: 1200, height: 630 }],
+      images: imagem
+        ? [`https://${NEGOCIO.dominio}${imagem}`]
+        : [{ url: "/og-cover.svg", width: 1200, height: 630 }],
     },
   };
 }
@@ -34,6 +39,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
   const categoria = getCategoria(post.categoriaRelacionada);
   const produtoRelacionado = post.produtoRelacionado ? getProduto(post.produtoRelacionado) : undefined;
+  const imagem = imagemDoPost(post);
 
   const schemaGraph: Record<string, unknown>[] = [
     articleSchema(post),
@@ -74,6 +80,21 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             .
           </p>
         )}
+
+        <div className="relative mt-8 flex aspect-[16/9] items-center justify-center overflow-hidden rounded-[3px] border border-line bg-gradient-to-br from-paper to-[#E3E6DB]">
+          {imagem ? (
+            <Image
+              src={imagem}
+              alt={produtoRelacionado?.nome || post.titulo}
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+              priority
+            />
+          ) : (
+            <CategoryIcon icon={categoria?.icon || "variados"} className="h-20 w-20 text-ink-soft" />
+          )}
+        </div>
 
         <div
           className="prose prose-headings:font-serif prose-headings:font-medium prose-a:text-brass-dark prose-table:text-sm mt-8 max-w-none text-[15px] leading-relaxed text-ink-soft"

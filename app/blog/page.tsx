@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { posts } from "@/lib/posts";
-import { categorias } from "@/lib/categorias";
+import CategoryIcon from "@/components/icons/CategoryIcon";
+import { posts, imagemDoPost } from "@/lib/posts";
+import { categorias, getCategoria } from "@/lib/categorias";
 import { NEGOCIO, linkWhatsApp } from "@/lib/negocio";
 
 export const metadata: Metadata = {
@@ -31,16 +33,35 @@ export default function BlogPage() {
 
         {posts.length > 0 ? (
           <div className="mt-11 grid grid-cols-1 gap-6 md:grid-cols-3">
-            {posts.map((p) => (
-              <Link
-                key={p.slug}
-                href={`/blog/${p.slug}/`}
-                className="rounded-[3px] border border-line bg-paper-2 p-6 hover:border-brass"
-              >
-                <h2 className="text-[15px] font-semibold">{p.titulo}</h2>
-                <p className="mt-2 text-sm text-ink-soft">{p.descricao}</p>
-              </Link>
-            ))}
+            {posts.map((p) => {
+              const imagem = imagemDoPost(p);
+              const categoria = getCategoria(p.categoriaRelacionada);
+              return (
+                <Link
+                  key={p.slug}
+                  href={`/blog/${p.slug}/`}
+                  className="overflow-hidden rounded-[3px] border border-line bg-paper-2 hover:border-brass"
+                >
+                  <div className="relative flex aspect-[16/9] items-center justify-center bg-gradient-to-br from-paper to-[#E3E6DB]">
+                    {imagem ? (
+                      <Image
+                        src={imagem}
+                        alt={p.titulo}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        className="object-cover"
+                      />
+                    ) : (
+                      <CategoryIcon icon={categoria?.icon || "variados"} className="h-10 w-10 text-ink-soft" />
+                    )}
+                  </div>
+                  <div className="p-6">
+                    <h2 className="text-[15px] font-semibold">{p.titulo}</h2>
+                    <p className="mt-2 text-sm text-ink-soft">{p.descricao}</p>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         ) : (
           <div className="mt-11 rounded-[3px] border border-line bg-paper-2 p-8">

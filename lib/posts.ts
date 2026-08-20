@@ -13,8 +13,13 @@ export type Post = {
   conteudoHtml: string; // corpo do artigo, sem FAQ (FAQ é renderizado à parte)
   faq: PostFaq[];
   howTo?: PostHowTo;
+  // Imagem de capa explícita — só necessária quando o post NÃO tem produtoRelacionado
+  // (pilar de categoria, por exemplo). Para pilar-produto, a foto é resolvida
+  // automaticamente a partir do produtoRelacionado, sem precisar declarar aqui.
+  imagemCapa?: string;
 };
 
+import { getImagemProduto } from "./imagens";
 import { termicosPilarCategoria } from "./posts/termicos/pilar-categoria";
 import { termicosPilaresProdutoParte1 } from "./posts/termicos/pilares-produto";
 import { termicosPilaresProdutoParte2 } from "./posts/termicos/pilares-produto-2";
@@ -39,4 +44,10 @@ export function getPilarProduto(produtoSlug: string) {
 
 export function getPostsPorCategoria(categoriaSlug: string) {
   return posts.filter((p) => p.categoriaRelacionada === categoriaSlug);
+}
+
+export function imagemDoPost(post: Post): string | undefined {
+  if (post.imagemCapa) return post.imagemCapa;
+  if (post.produtoRelacionado) return getImagemProduto(post.produtoRelacionado);
+  return undefined;
 }
