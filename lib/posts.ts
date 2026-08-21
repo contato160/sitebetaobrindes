@@ -34,8 +34,10 @@ import { relogioPilaresProduto } from "./posts/relogio/pilares-produto";
 import { relogioComplementares } from "./posts/relogio/complementares";
 import { neoprenePilarCategoria } from "./posts/neoprene/pilar-categoria";
 import { neoprenePilaresProduto } from "./posts/neoprene/pilares-produto";
+import { neopreneComplementares } from "./posts/neoprene/complementares";
 import { toalhaPilarCategoria } from "./posts/toalha/pilar-categoria";
 import { toalhaPilaresProduto } from "./posts/toalha/pilares-produto";
+import { toalhaComplementares } from "./posts/toalha/complementares";
 import { squeezePilarCategoria } from "./posts/squeeze/pilar-categoria";
 import { squeezePilaresProduto } from "./posts/squeeze/pilares-produto";
 import { portaDocumentosPilarCategoria } from "./posts/porta-documentos/pilar-categoria";
@@ -64,8 +66,10 @@ export const posts: Post[] = [
   ...relogioComplementares,
   neoprenePilarCategoria,
   ...neoprenePilaresProduto,
+  ...neopreneComplementares,
   toalhaPilarCategoria,
   ...toalhaPilaresProduto,
+  ...toalhaComplementares,
   squeezePilarCategoria,
   ...squeezePilaresProduto,
   portaDocumentosPilarCategoria,
