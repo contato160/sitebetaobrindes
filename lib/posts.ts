@@ -58,9 +58,11 @@ import { vidroPilaresProduto } from "./posts/vidro/pilares-produto";
 import { vidroComplementares } from "./posts/vidro/complementares";
 import { variadosPilarCategoria } from "./posts/variados/pilar-categoria";
 import { variadosPilaresProduto } from "./posts/variados/pilares-produto";
+import { variadosComplementares } from "./posts/variados/complementares";
 import { bolsasPilarCategoria } from "./posts/bolsas/pilar-categoria";
 import { bolsasPilaresProdutoParte1 } from "./posts/bolsas/pilares-produto";
 import { bolsasPilaresProdutoParte2 } from "./posts/bolsas/pilares-produto-2";
+import { bolsasComplementares } from "./posts/bolsas/complementares";
 
 export const posts: Post[] = [
   termicosPilarCategoria,
@@ -96,9 +98,11 @@ export const posts: Post[] = [
   ...vidroComplementares,
   variadosPilarCategoria,
   ...variadosPilaresProduto,
+  ...variadosComplementares,
   bolsasPilarCategoria,
   ...bolsasPilaresProdutoParte1,
   ...bolsasPilaresProdutoParte2,
+  ...bolsasComplementares,
 ];
 
 export function getPost(slug: string) {
