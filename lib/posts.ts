@@ -29,6 +29,10 @@ import { neoprenePilarCategoria } from "./posts/neoprene/pilar-categoria";
 import { neoprenePilaresProduto } from "./posts/neoprene/pilares-produto";
 import { toalhaPilarCategoria } from "./posts/toalha/pilar-categoria";
 import { toalhaPilaresProduto } from "./posts/toalha/pilares-produto";
+import { squeezePilarCategoria } from "./posts/squeeze/pilar-categoria";
+import { squeezePilaresProduto } from "./posts/squeeze/pilares-produto";
+import { portaDocumentosPilarCategoria } from "./posts/porta-documentos/pilar-categoria";
+import { portaDocumentosPilaresProduto } from "./posts/porta-documentos/pilares-produto";
 
 export const posts: Post[] = [
   termicosPilarCategoria,
@@ -40,6 +44,10 @@ export const posts: Post[] = [
   ...neoprenePilaresProduto,
   toalhaPilarCategoria,
   ...toalhaPilaresProduto,
+  squeezePilarCategoria,
+  ...squeezePilaresProduto,
+  portaDocumentosPilarCategoria,
+  ...portaDocumentosPilaresProduto,
 ];
 
 export function getPost(slug: string) {
