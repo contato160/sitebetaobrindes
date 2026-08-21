@@ -13,7 +13,7 @@ import { getImagemProduto } from "@/lib/imagens";
 import { NEGOCIO, linkWhatsApp } from "@/lib/negocio";
 import { breadcrumbSchema, faqSchema, productSchema } from "@/lib/schema";
 import { faqProduto } from "@/lib/faq";
-import { getPilarProduto, getPilarCategoria } from "@/lib/posts";
+import { getPilarProduto, getPilarCategoria, getComplementaresPorProduto } from "@/lib/posts";
 
 export function generateStaticParams() {
   return produtos.map((p) => ({ slug: p.slug }));
@@ -57,6 +57,7 @@ export default function ProdutoPage({ params }: { params: { slug: string } }) {
   const min = produto.pedidoMinimo || NEGOCIO.pedidoMinimoPadrao;
   const pilarProduto = getPilarProduto(produto.slug);
   const pilarCategoria = getPilarCategoria(categoria.slug);
+  const complementares = getComplementaresPorProduto(produto.slug).slice(0, 2);
 
   const schema = {
     "@context": "https://schema.org",
@@ -225,7 +226,7 @@ export default function ProdutoPage({ params }: { params: { slug: string } }) {
           </div>
         )}
 
-        {(pilarProduto || pilarCategoria) && (
+        {(pilarProduto || pilarCategoria || complementares.length > 0) && (
           <div className="mt-16 max-w-2xl">
             <h2 className="mb-4 font-serif text-2xl font-medium">Artigos relacionados</h2>
             <ul className="space-y-3">
@@ -236,6 +237,13 @@ export default function ProdutoPage({ params }: { params: { slug: string } }) {
                   </Link>
                 </li>
               )}
+              {complementares.map((c) => (
+                <li key={c.slug}>
+                  <Link href={`/blog/${c.slug}/`} className="text-sm text-brass-dark hover:underline">
+                    {c.titulo}
+                  </Link>
+                </li>
+              ))}
               {pilarCategoria && (
                 <li>
                   <Link href={`/blog/${pilarCategoria.slug}/`} className="text-sm text-brass-dark hover:underline">

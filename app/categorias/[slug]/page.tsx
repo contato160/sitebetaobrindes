@@ -42,6 +42,9 @@ export default function CategoriaPage({ params }: { params: { slug: string } }) 
   const pilaresProduto = getPostsPorCategoria(categoria.slug).filter(
     (p) => p.tipo === "pilar-produto"
   );
+  const complementares = getPostsPorCategoria(categoria.slug).filter(
+    (p) => p.tipo === "complementar-categoria"
+  );
 
   const schema = {
     "@context": "https://schema.org",
@@ -117,6 +120,21 @@ export default function CategoriaPage({ params }: { params: { slug: string } }) 
             <h2 className="mb-4 font-serif text-2xl font-medium">Guias por produto desta categoria</h2>
             <ul className="grid grid-cols-1 gap-x-8 gap-y-3 md:grid-cols-2">
               {pilaresProduto.map((p) => (
+                <li key={p.slug}>
+                  <Link href={`/blog/${p.slug}/`} className="text-sm text-brass-dark hover:underline">
+                    {p.titulo}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {complementares.length > 0 && (
+          <div className="mt-14">
+            <h2 className="mb-4 font-serif text-2xl font-medium">Mais sobre {categoria.nome.toLowerCase()}</h2>
+            <ul className="grid grid-cols-1 gap-x-8 gap-y-3 md:grid-cols-2">
+              {complementares.map((p) => (
                 <li key={p.slug}>
                   <Link href={`/blog/${p.slug}/`} className="text-sm text-brass-dark hover:underline">
                     {p.titulo}

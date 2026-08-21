@@ -54,14 +54,23 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
   const schema = { "@context": "https://schema.org", "@graph": schemaGraph };
 
-  // Produtos relacionados: se é pilar de categoria, mostra todos os produtos da categoria;
-  // se é pilar de produto, mostra o próprio produto + os demais da categoria.
-  const produtosRelacionados = categoria ? getProdutosPorCategoria(categoria.slug) : [];
+  // Produtos relacionados: complementar-categoria mostra só os 2-3 produtos citados
+  // no texto (regra de interlinkagem da seção 4.3); pilar-categoria/pilar-produto
+  // mostram o catálogo completo da categoria.
+  const produtosRelacionados =
+    post.tipo === "complementar-categoria" && post.produtosRelacionados
+      ? post.produtosRelacionados
+          .map((slug) => getProduto(slug))
+          .filter((p): p is NonNullable<typeof p> => Boolean(p))
+      : categoria
+        ? getProdutosPorCategoria(categoria.slug)
+        : [];
 
-  // Artigos relacionados: outros posts da mesma categoria (pilares de produto), exceto este.
-  const artigosRelacionados = getPostsPorCategoria(post.categoriaRelacionada).filter(
-    (p) => p.slug !== post.slug
-  );
+  // Artigos relacionados: outros posts da mesma categoria, exceto este — limitado
+  // para não virar uma lista enorme em categorias com muitos complementares.
+  const artigosRelacionados = getPostsPorCategoria(post.categoriaRelacionada)
+    .filter((p) => p.slug !== post.slug)
+    .slice(0, 8);
 
   return (
     <>

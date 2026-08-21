@@ -8,6 +8,11 @@ export type Post = {
   tipo: "pilar-categoria" | "complementar-categoria" | "pilar-produto";
   categoriaRelacionada: string; // slug da categoria
   produtoRelacionado?: string; // slug do produto (obrigatório para pilar-produto)
+  // Produtos citados no corpo do artigo — usado por complementar-categoria,
+  // que costuma referenciar 2-3 produtos específicos (ver seção 4.3 do
+  // prompt master: regra de interlinkagem). Cada produto citado deve ter
+  // link tanto para seu pilar quanto para sua página de venda no texto.
+  produtosRelacionados?: string[];
   dataPublicacao: string; // ISO
   dataAtualizacao: string; // ISO
   conteudoHtml: string; // corpo do artigo, sem FAQ (FAQ é renderizado à parte)
@@ -23,6 +28,7 @@ import { getImagemProduto } from "./imagens";
 import { termicosPilarCategoria } from "./posts/termicos/pilar-categoria";
 import { termicosPilaresProdutoParte1 } from "./posts/termicos/pilares-produto";
 import { termicosPilaresProdutoParte2 } from "./posts/termicos/pilares-produto-2";
+import { termicosComplementares } from "./posts/termicos/complementares";
 import { relogioPilarCategoria } from "./posts/relogio/pilar-categoria";
 import { relogioPilaresProduto } from "./posts/relogio/pilares-produto";
 import { neoprenePilarCategoria } from "./posts/neoprene/pilar-categoria";
@@ -51,6 +57,7 @@ export const posts: Post[] = [
   termicosPilarCategoria,
   ...termicosPilaresProdutoParte1,
   ...termicosPilaresProdutoParte2,
+  ...termicosComplementares,
   relogioPilarCategoria,
   ...relogioPilaresProduto,
   neoprenePilarCategoria,
@@ -90,6 +97,18 @@ export function getPilarProduto(produtoSlug: string) {
 
 export function getPostsPorCategoria(categoriaSlug: string) {
   return posts.filter((p) => p.categoriaRelacionada === categoriaSlug);
+}
+
+export function getComplementaresPorCategoria(categoriaSlug: string) {
+  return posts.filter((p) => p.tipo === "complementar-categoria" && p.categoriaRelacionada === categoriaSlug);
+}
+
+// Complementares que citam um produto específico — usado na seção
+// "Artigos relacionados" da página de venda do produto.
+export function getComplementaresPorProduto(produtoSlug: string) {
+  return posts.filter(
+    (p) => p.tipo === "complementar-categoria" && p.produtosRelacionados?.includes(produtoSlug)
+  );
 }
 
 export function imagemDoPost(post: Post): string | undefined {
