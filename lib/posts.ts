@@ -37,6 +37,8 @@ import { necessairePilarCategoria } from "./posts/necessaire/pilar-categoria";
 import { necessairePilaresProduto } from "./posts/necessaire/pilares-produto";
 import { portaCartaoPilarCategoria } from "./posts/porta-cartao/pilar-categoria";
 import { portaCartaoPilaresProduto } from "./posts/porta-cartao/pilares-produto";
+import { porcelanasPilarCategoria } from "./posts/porcelanas/pilar-categoria";
+import { porcelanasPilaresProduto } from "./posts/porcelanas/pilares-produto";
 
 export const posts: Post[] = [
   termicosPilarCategoria,
@@ -56,6 +58,8 @@ export const posts: Post[] = [
   ...necessairePilaresProduto,
   portaCartaoPilarCategoria,
   ...portaCartaoPilaresProduto,
+  porcelanasPilarCategoria,
+  ...porcelanasPilaresProduto,
 ];
 
 export function getPost(slug: string) {
