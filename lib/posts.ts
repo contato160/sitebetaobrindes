@@ -52,8 +52,10 @@ import { portaCartaoPilaresProduto } from "./posts/porta-cartao/pilares-produto"
 import { portaCartaoComplementares } from "./posts/porta-cartao/complementares";
 import { porcelanasPilarCategoria } from "./posts/porcelanas/pilar-categoria";
 import { porcelanasPilaresProduto } from "./posts/porcelanas/pilares-produto";
+import { porcelanasComplementares } from "./posts/porcelanas/complementares";
 import { vidroPilarCategoria } from "./posts/vidro/pilar-categoria";
 import { vidroPilaresProduto } from "./posts/vidro/pilares-produto";
+import { vidroComplementares } from "./posts/vidro/complementares";
 import { variadosPilarCategoria } from "./posts/variados/pilar-categoria";
 import { variadosPilaresProduto } from "./posts/variados/pilares-produto";
 import { bolsasPilarCategoria } from "./posts/bolsas/pilar-categoria";
@@ -88,8 +90,10 @@ export const posts: Post[] = [
   ...portaCartaoComplementares,
   porcelanasPilarCategoria,
   ...porcelanasPilaresProduto,
+  ...porcelanasComplementares,
   vidroPilarCategoria,
   ...vidroPilaresProduto,
+  ...vidroComplementares,
   variadosPilarCategoria,
   ...variadosPilaresProduto,
   bolsasPilarCategoria,
