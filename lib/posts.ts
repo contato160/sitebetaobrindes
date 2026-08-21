@@ -40,8 +40,10 @@ import { toalhaPilaresProduto } from "./posts/toalha/pilares-produto";
 import { toalhaComplementares } from "./posts/toalha/complementares";
 import { squeezePilarCategoria } from "./posts/squeeze/pilar-categoria";
 import { squeezePilaresProduto } from "./posts/squeeze/pilares-produto";
+import { squeezeComplementares } from "./posts/squeeze/complementares";
 import { portaDocumentosPilarCategoria } from "./posts/porta-documentos/pilar-categoria";
 import { portaDocumentosPilaresProduto } from "./posts/porta-documentos/pilares-produto";
+import { portaDocumentosComplementares } from "./posts/porta-documentos/complementares";
 import { necessairePilarCategoria } from "./posts/necessaire/pilar-categoria";
 import { necessairePilaresProduto } from "./posts/necessaire/pilares-produto";
 import { portaCartaoPilarCategoria } from "./posts/porta-cartao/pilar-categoria";
@@ -72,8 +74,10 @@ export const posts: Post[] = [
   ...toalhaComplementares,
   squeezePilarCategoria,
   ...squeezePilaresProduto,
+  ...squeezeComplementares,
   portaDocumentosPilarCategoria,
   ...portaDocumentosPilaresProduto,
+  ...portaDocumentosComplementares,
   necessairePilarCategoria,
   ...necessairePilaresProduto,
   portaCartaoPilarCategoria,
