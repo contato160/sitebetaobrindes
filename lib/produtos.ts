@@ -79,12 +79,13 @@ export const produtos: Produto[] = [
   { id: 'caneca-porcelana-alca-coracao-personalizada', categoria: 'porcelanas', nome: 'Caneca de Porcelana com Alça Coração Personalizada', slug: 'caneca-porcelana-alca-coracao-personalizada', origemArquivo: '22 Caneca de Porcelana Alça Coração Branca Mecolour - Su...', pedidoMinimo: 20 },
   { id: 'caneca-porcelana-fall-350ml-personalizada', categoria: 'porcelanas', nome: 'Caneca de Porcelana Fall 350ml Personalizada', slug: 'caneca-porcelana-fall-350ml-personalizada', origemArquivo: '23 Caneca de Porcelana Fall 350ml Sublime - Sublimação', pedidoMinimo: 20 },
 
-  // ===== PORTA-CARTÃO (5) =====
+  // ===== PORTA-CARTÃO (6) =====
   { id: 'porta-cartao-couro-personalizado-1', categoria: 'porta-cartao', nome: 'Porta-Cartão em Couro Personalizado', slug: 'porta-cartao-couro-personalizado-1', origemArquivo: '41 Porta cartao em couro', precisaDiferenciar: true, pedidoMinimo: 20 },
   { id: 'porta-cartao-sintetico-personalizado', categoria: 'porta-cartao', nome: 'Porta-Cartão Sintético Personalizado', slug: 'porta-cartao-sintetico-personalizado', origemArquivo: '42 porta cartao sintetico', pedidoMinimo: 20 },
   { id: 'porta-cartao-costurado-personalizado', categoria: 'porta-cartao', nome: 'Porta-Cartão Costurado Personalizado', slug: 'porta-cartao-costurado-personalizado', origemArquivo: '43 porta cartao costurado', pedidoMinimo: 20 },
   { id: 'porta-notas-personalizado', categoria: 'porta-cartao', nome: 'Porta-Notas Personalizado', slug: 'porta-notas-personalizado', origemArquivo: '63 porta notas - personalizado', pedidoMinimo: 20 },
   { id: 'porta-cartao-couro-personalizado-2', categoria: 'porta-cartao', nome: 'Porta-Cartão em Couro Personalizado', slug: 'porta-cartao-couro-personalizado-2', origemArquivo: '64 Porta cartão - personalizado em couro', precisaDiferenciar: true, pedidoMinimo: 20 },
+  { id: 'carteira-slim-couro-personalizada', categoria: 'porta-cartao', nome: 'Carteira Slim em Couro Personalizada', slug: 'carteira-slim-couro-personalizada', origemArquivo: 'CARTEIRA EM COURO, MODELO SLIM, PORTA CARTÃO EM COURO', descricaoCurta: 'Carteira slim em couro com fole para cartões, disponível em várias cores — modelo compacto que também funciona como porta-cartão.', pedidoMinimo: 20 },
 
   // ===== PORTA-DOCUMENTOS EXECUTIVOS (5) =====
   { id: 'porta-tablet-personalizado-1', categoria: 'porta-documentos', nome: 'Porta-Tablet Personalizado', slug: 'porta-tablet-personalizado-1', origemArquivo: '70 porta tablet', precisaDiferenciar: true, pedidoMinimo: 20 },

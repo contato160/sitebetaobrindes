@@ -2,6 +2,7 @@
 // Mapeia slug do produto -> caminho da imagem em /public.
 
 export const imagensProduto: Record<string, string> = {
+  "carteira-slim-couro-personalizada": "/images/produtos/porta-cartao/carteira-slim-couro-personalizada-01.jpeg",
   "shoulder-bag-tecido-personalizada": "/images/produtos/bolsas/shoulder-bag-tecido-personalizada-01.jpeg",
   "pochete-lona-personalizada": "/images/produtos/bolsas/pochete-lona-personalizada-01.jpeg",
   "bolsa-lona-crua-personalizada": "/images/produtos/bolsas/bolsa-lona-crua-personalizada-01.png",
