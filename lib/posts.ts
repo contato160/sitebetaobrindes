@@ -46,8 +46,10 @@ import { portaDocumentosPilaresProduto } from "./posts/porta-documentos/pilares-
 import { portaDocumentosComplementares } from "./posts/porta-documentos/complementares";
 import { necessairePilarCategoria } from "./posts/necessaire/pilar-categoria";
 import { necessairePilaresProduto } from "./posts/necessaire/pilares-produto";
+import { necessaireComplementares } from "./posts/necessaire/complementares";
 import { portaCartaoPilarCategoria } from "./posts/porta-cartao/pilar-categoria";
 import { portaCartaoPilaresProduto } from "./posts/porta-cartao/pilares-produto";
+import { portaCartaoComplementares } from "./posts/porta-cartao/complementares";
 import { porcelanasPilarCategoria } from "./posts/porcelanas/pilar-categoria";
 import { porcelanasPilaresProduto } from "./posts/porcelanas/pilares-produto";
 import { vidroPilarCategoria } from "./posts/vidro/pilar-categoria";
@@ -80,8 +82,10 @@ export const posts: Post[] = [
   ...portaDocumentosComplementares,
   necessairePilarCategoria,
   ...necessairePilaresProduto,
+  ...necessaireComplementares,
   portaCartaoPilarCategoria,
   ...portaCartaoPilaresProduto,
+  ...portaCartaoComplementares,
   porcelanasPilarCategoria,
   ...porcelanasPilaresProduto,
   vidroPilarCategoria,
