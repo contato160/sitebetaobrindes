@@ -83,7 +83,8 @@ export default function CategoriaPage({ params }: { params: { slug: string } }) 
             Pedir orçamento desta categoria
           </a>
           <span className="mono flex items-center font-mono text-xs uppercase tracking-[0.06em] text-ink-soft">
-            {produtosCategoria.length} produtos · a partir de {NEGOCIO.pedidoMinimoPadrao} un.
+            {produtosCategoria.length} produto{produtosCategoria.length === 1 ? "" : "s"} · a partir de{" "}
+            {NEGOCIO.pedidoMinimoPadrao} un.
           </span>
         </div>
 

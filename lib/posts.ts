@@ -23,11 +23,23 @@ import { getImagemProduto } from "./imagens";
 import { termicosPilarCategoria } from "./posts/termicos/pilar-categoria";
 import { termicosPilaresProdutoParte1 } from "./posts/termicos/pilares-produto";
 import { termicosPilaresProdutoParte2 } from "./posts/termicos/pilares-produto-2";
+import { relogioPilarCategoria } from "./posts/relogio/pilar-categoria";
+import { relogioPilaresProduto } from "./posts/relogio/pilares-produto";
+import { neoprenePilarCategoria } from "./posts/neoprene/pilar-categoria";
+import { neoprenePilaresProduto } from "./posts/neoprene/pilares-produto";
+import { toalhaPilarCategoria } from "./posts/toalha/pilar-categoria";
+import { toalhaPilaresProduto } from "./posts/toalha/pilares-produto";
 
 export const posts: Post[] = [
   termicosPilarCategoria,
   ...termicosPilaresProdutoParte1,
   ...termicosPilaresProdutoParte2,
+  relogioPilarCategoria,
+  ...relogioPilaresProduto,
+  neoprenePilarCategoria,
+  ...neoprenePilaresProduto,
+  toalhaPilarCategoria,
+  ...toalhaPilaresProduto,
 ];
 
 export function getPost(slug: string) {
