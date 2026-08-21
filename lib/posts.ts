@@ -31,6 +31,7 @@ import { termicosPilaresProdutoParte2 } from "./posts/termicos/pilares-produto-2
 import { termicosComplementares } from "./posts/termicos/complementares";
 import { relogioPilarCategoria } from "./posts/relogio/pilar-categoria";
 import { relogioPilaresProduto } from "./posts/relogio/pilares-produto";
+import { relogioComplementares } from "./posts/relogio/complementares";
 import { neoprenePilarCategoria } from "./posts/neoprene/pilar-categoria";
 import { neoprenePilaresProduto } from "./posts/neoprene/pilares-produto";
 import { toalhaPilarCategoria } from "./posts/toalha/pilar-categoria";
@@ -60,6 +61,7 @@ export const posts: Post[] = [
   ...termicosComplementares,
   relogioPilarCategoria,
   ...relogioPilaresProduto,
+  ...relogioComplementares,
   neoprenePilarCategoria,
   ...neoprenePilaresProduto,
   toalhaPilarCategoria,
