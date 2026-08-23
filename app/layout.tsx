@@ -41,6 +41,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [{ url: "/og-cover.svg", width: 1200, height: 630 }],
   },
+  verification: {
+    google: "qjx451OCX0fl_zwd-yPGOYf7ealYjnJmu8zeav9wWg8",
+  },
 };
 
 export default function RootLayout({
