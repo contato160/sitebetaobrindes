@@ -73,6 +73,10 @@ export const termicosPilarCategoria: Post = {
 
 <p>Cada uso tende a puxar um formato diferente: eventos e festas favorecem canecas de chopp e taças; uso corporativo do dia a dia favorece copos com tampa e garrafas; kits de hospedagem favorecem garrafas e canecas com acabamento mais sóbrio.</p>
 
+<p>Vale notar que a mesma peça costuma cumprir mais de um desses papéis ao longo do tempo. Uma garrafa térmica entregue como brinde de fim de ano, por exemplo, tende a acompanhar o colaborador para academia, trabalho e viagens curtas nos meses seguintes — o que estende bem além da data do evento o período em que a marca fica visível. Esse é um dos motivos pelos quais térmicos costumam ter retorno percebido maior que brindes de uso único (como blocos de anotação ou canetas): a peça continua em circulação, sendo vista por outras pessoas, muito depois da entrega.</p>
+
+<p>Para pousadas e hotéis especificamente, a escolha do modelo também comunica posicionamento. Um copo térmico simples, com tampa e acabamento fosco, remete a um serviço mais despojado e voltado a hóspede jovem ou turismo de aventura; já uma garrafa com display de temperatura ou uma caneca de acabamento mais elaborado tende a se alinhar com propriedades de posicionamento mais premium. Não existe modelo "certo" — existe modelo coerente com a experiência que o estabelecimento já entrega em outros pontos de contato com o hóspede.</p>
+
 <h2>Técnicas de personalização disponíveis</h2>
 
 <p>A escolha da técnica de personalização não é estética apenas — ela é definida pelo material e acabamento de cada peça, e afeta diretamente a durabilidade da arte impressa. No catálogo de térmicos, duas técnicas predominam:</p>
@@ -85,11 +89,15 @@ export const termicosPilarCategoria: Post = {
 
 <p>Na prática: se você já tem uma peça em mente, a técnica correta para ela aparece na página do produto específico, na seção "Personalização disponível". Se ainda está decidindo entre dois modelos e a durabilidade da arte é prioridade, pergunte pelo WhatsApp qual dos dois tem melhor resultado de longo prazo para o seu uso.</p>
 
+<p>Um ponto que costuma pegar quem está pedindo pela primeira vez: a área de aplicação e o número de cores da arte não têm o mesmo impacto nas duas técnicas. No DTF, artes com muitas cores e degradês saem sem custo adicional relevante, já que a impressão digital reproduz qualquer paleta na mesma passada. Na sublimação, o resultado também aceita cores ilimitadas, mas exige que a peça tenha revestimento compatível — por isso nem toda cor de corpo de produto aceita essa técnica igualmente bem; corpos muito escuros, por exemplo, tendem a "esmaecer" cores claras da arte por sublimação, o que raramente acontece no DTF.</p>
+
 <h2>Materiais e estrutura térmica: o que muda de um modelo para outro</h2>
 
 <p>Nem todo "térmico" é igual por dentro. A maioria dos copos e canecas térmicas do catálogo usa <strong>parede dupla em aço inoxidável</strong>, com uma câmara de vácuo entre as duas paredes — é essa câmara, e não o material externo, que garante o isolamento térmico e mantém bebida quente ou gelada por mais tempo. Já as garrafas com display de temperatura somam um sensor digital simples à mesma estrutura de parede dupla, mostrando a temperatura do líquido em tempo real.</p>
 
 <p>Isso importa na hora de comparar preço entre modelos parecidos: uma diferença de valor entre dois copos térmicos de volume semelhante normalmente reflete a espessura da parede, o acabamento externo (fosco, brilhante, emborrachado) ou a presença de acessórios como tampa com trava, alça ou canudo reutilizável — não só o tamanho.</p>
+
+<p>Na prática, essa câmara de vácuo é o que separa um "térmico" de verdade de um copo ou caneca comum com paredes duplas simplesmente decorativas. Sem vácuo entre as paredes, o ar presente conduz calor e a bebida esfria ou esquenta praticamente no mesmo ritmo de um copo de parede única. Modelos com vácuo bem vedado costumam manter bebida gelada por 12 a 24 horas e bebida quente por 6 a 12 horas, dependendo do volume da peça e da diferença de temperatura entre o líquido e o ambiente — peças menores perdem temperatura mais rápido que peças de maior volume, simplesmente porque têm menos massa líquida para reter calor ou frio.</p>
 
 <h2>Área de personalização e cores disponíveis</h2>
 
@@ -102,10 +110,11 @@ export const termicosPilarCategoria: Post = {
 <p>Alguns problemas aparecem com frequência em pedidos de primeira viagem — vale evitar:</p>
 
 <ul>
-<li><strong>Fechar o pedido sem aprovar a prova digital.</strong> A arte final pode ficar em posição, tamanho ou cor diferente do que você imaginou. A prova evita retrabalho e é parte padrão do processo, não uma etapa opcional.</li>
-<li><strong>Não considerar o prazo de produção na data do evento.</strong> Como o prazo só começa a contar após a aprovação da arte, deixar essa aprovação para a última hora empurra a data de entrega — planeje com folga, principalmente em época de alta demanda (fim de ano, temporada de formaturas).</li>
-<li><strong>Escolher a técnica errada para o uso pretendido.</strong> Um térmico que vai para lava-louças com frequência se beneficia de uma técnica mais resistente; um brinde de uso pontual (evento único, por exemplo) pode priorizar custo em vez de durabilidade máxima.</li>
-<li><strong>Pedir a quantidade exata de convidados/colaboradores, sem margem.</strong> Pequenos imprevistos (peça com defeito de fábrica, convidado extra de última hora) são mais bem resolvidos com uma margem pequena no pedido do que com uma reposição posterior, que tem prazo próprio de produção.</li>
+<li><strong>Fechar o pedido sem aprovar a prova digital.</strong> A arte final pode ficar em posição, tamanho ou cor diferente do que você imaginou — principalmente em peças cilíndricas, onde uma logo que parecia centralizada no arquivo original pode ficar deslocada quando aplicada na curvatura real do produto. A prova evita retrabalho e é parte padrão do processo, não uma etapa opcional.</li>
+<li><strong>Não considerar o prazo de produção na data do evento.</strong> Como o prazo só começa a contar após a aprovação da arte, deixar essa aprovação para a última hora empurra a data de entrega — planeje com folga, principalmente em época de alta demanda (fim de ano, temporada de formaturas), quando o volume de pedidos simultâneos no mercado tende a esticar levemente os prazos médios de produção.</li>
+<li><strong>Escolher a técnica errada para o uso pretendido.</strong> Um térmico que vai para lava-louças com frequência se beneficia de uma técnica mais resistente; um brinde de uso pontual (evento único, por exemplo) pode priorizar custo em vez de durabilidade máxima. Vale perguntar diretamente qual técnica o modelo escolhido usa antes de decidir só pela foto do produto.</li>
+<li><strong>Pedir a quantidade exata de convidados/colaboradores, sem margem.</strong> Pequenos imprevistos (peça com defeito de fábrica, convidado extra de última hora) são mais bem resolvidos com uma margem pequena no pedido do que com uma reposição posterior, que tem prazo próprio de produção e dificilmente chega a tempo do mesmo evento.</li>
+<li><strong>Ignorar a compatibilidade de cor entre arte e corpo do produto.</strong> Uma arte pensada para fundo claro pode perder legibilidade num corpo de cor escura, e vice-versa — quando o modelo permite escolher a cor do corpo, vale pensar nessa combinação antes de fechar a arte final, não depois.</li>
 </ul>
 
 <h2>Como calcular a quantidade certa</h2>
@@ -125,6 +134,8 @@ export const termicosPilarCategoria: Post = {
 <p>O mercado de brindes personalizados trabalha com <strong>preço decrescente por volume</strong>: quanto maior o lote, menor tende a ser o valor por unidade, porque a arte e a preparação de máquina são custos fixos diluídos entre mais peças. Isso vale para todos os térmicos do catálogo.</p>
 
 <p>Os valores exatos por faixa de quantidade variam por modelo (material, tamanho e técnica de personalização influenciam o custo de produção) e por isso são fornecidos sob consulta — não publicamos uma tabela genérica de preço para não passar um número que não reflita o modelo específico que você está considerando. O caminho mais rápido é informar pelo WhatsApp o modelo e a quantidade estimada: a resposta com a faixa de preço sai em até 1h em horário comercial.</p>
+
+<p>Além do volume, três outros fatores costumam influenciar o valor final: o número de cores/complexidade da arte (uma logo de uma cor só custa menos para aplicar que uma arte fotográfica com gradientes), a presença de acessórios extras na peça (canudo, alça, tampa com trava) e se o pedido usa uma única arte padronizada em todas as unidades ou várias artes diferentes dentro do mesmo lote — este último caso, comum em presentes individuais com nomes diferentes por peça, tem custo de preparação um pouco maior por unidade do que um lote inteiro com a mesma logo.</p>
 
 ${ctaWhatsAppHtml(
   "Olá! Quero saber o preço de térmicos personalizados por quantidade.",
