@@ -30,6 +30,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: `${produto.nome} — Brinde Corporativo`,
     description: descricao,
+    alternates: { canonical: url },
     openGraph: {
       url,
       title: produto.nome,

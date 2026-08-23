@@ -23,6 +23,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: categoria.nome,
     description: categoria.descricao,
+    alternates: { canonical: url },
     openGraph: {
       url,
       title: categoria.nome,

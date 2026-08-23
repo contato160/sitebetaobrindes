@@ -21,11 +21,13 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const post = getPost(params.slug);
   if (!post) return {};
   const imagem = imagemDoPost(post);
+  const url = `https://${NEGOCIO.dominio}/blog/${post.slug}/`;
   return {
     title: post.titulo,
     description: post.descricao,
+    alternates: { canonical: url },
     openGraph: {
-      url: `https://${NEGOCIO.dominio}/blog/${post.slug}/`,
+      url,
       images: imagem
         ? [`https://${NEGOCIO.dominio}${imagem}`]
         : [{ url: "/og-cover.svg", width: 1200, height: 630 }],

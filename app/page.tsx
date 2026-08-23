@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,6 +9,10 @@ import { categorias } from "@/lib/categorias";
 import { getMaisBuscados, getProdutosPorCategoria } from "@/lib/produtos";
 import { getImagemProduto } from "@/lib/imagens";
 import { linkWhatsApp } from "@/lib/negocio";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function HomePage() {
   const maisBuscados = getMaisBuscados(8);
