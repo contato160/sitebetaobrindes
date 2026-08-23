@@ -1,4 +1,5 @@
 import type { Post } from "../../posts";
+import { getImagemProduto } from "../../imagens";
 import { ctaWhatsAppHtml, produtoLink, pilarProdutoLink, categoriaLink } from "../../postBlocks";
 
 const linkCategoria = categoriaLink("Produtos em Neoprene", "neoprene");
@@ -18,6 +19,7 @@ const preco: Post = {
     "Como funciona o preço da bolsa e da lixeira de carro em neoprene personalizadas por quantidade, e o que influencia o valor final.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "neoprene",
+  imagemCapa: getImagemProduto("bolsa-neoprene-personalizada"),
   produtosRelacionados: ["bolsa-neoprene-personalizada", "lixeira-carro-personalizada"],
   dataPublicacao: "2026-02-24T09:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -52,6 +54,7 @@ const comparacaoTecnicas: Post = {
     "Por que a sublimação é a técnica usada para personalizar bolsa e lixeira de carro em neoprene, e o que esperar do resultado final.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "neoprene",
+  imagemCapa: getImagemProduto("bolsa-neoprene-personalizada"),
   produtosRelacionados: ["bolsa-neoprene-personalizada", "lixeira-carro-personalizada"],
   dataPublicacao: "2026-02-24T10:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -86,6 +89,7 @@ const guiaOcasiao: Post = {
     "Como aproveitar a bolsa e a lixeira de carro em neoprene personalizadas no dia a dia, em viagens e como brinde para quem dirige.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "neoprene",
+  imagemCapa: getImagemProduto("bolsa-neoprene-personalizada"),
   produtosRelacionados: ["bolsa-neoprene-personalizada", "lixeira-carro-personalizada"],
   dataPublicacao: "2026-02-24T11:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -124,6 +128,7 @@ const b2b: Post = {
     "Como concessionárias, oficinas e empresas usam a lixeira de carro e a bolsa de neoprene personalizadas como brinde corporativo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "neoprene",
+  imagemCapa: getImagemProduto("lixeira-carro-personalizada"),
   produtosRelacionados: ["lixeira-carro-personalizada", "bolsa-neoprene-personalizada"],
   dataPublicacao: "2026-02-24T12:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -162,6 +167,7 @@ const b2c: Post = {
     "Como pedir a bolsa ou a lixeira de carro em neoprene personalizada em pequena quantidade para presentear.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "neoprene",
+  imagemCapa: getImagemProduto("bolsa-neoprene-personalizada"),
   produtosRelacionados: ["bolsa-neoprene-personalizada", "lixeira-carro-personalizada"],
   dataPublicacao: "2026-02-24T13:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -200,6 +206,7 @@ const cuidados: Post = {
     "Dicas de limpeza e conservação para a bolsa e a lixeira de carro em neoprene personalizadas.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "neoprene",
+  imagemCapa: getImagemProduto("bolsa-neoprene-personalizada"),
   produtosRelacionados: ["bolsa-neoprene-personalizada", "lixeira-carro-personalizada"],
   dataPublicacao: "2026-02-24T14:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -242,6 +249,7 @@ const comoEscolher: Post = {
     "Comparação entre a bolsa e a lixeira de carro em neoprene personalizadas para ajudar a decidir qual pedir.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "neoprene",
+  imagemCapa: getImagemProduto("bolsa-neoprene-personalizada"),
   produtosRelacionados: ["bolsa-neoprene-personalizada", "lixeira-carro-personalizada"],
   dataPublicacao: "2026-02-24T15:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -286,6 +294,7 @@ const sustentabilidade: Post = {
     "Por que a bolsa e a lixeira de carro em neoprene, por serem duráveis e reutilizáveis, são uma alternativa a itens descartáveis.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "neoprene",
+  imagemCapa: getImagemProduto("bolsa-neoprene-personalizada"),
   produtosRelacionados: ["bolsa-neoprene-personalizada", "lixeira-carro-personalizada"],
   dataPublicacao: "2026-02-24T16:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -324,6 +333,7 @@ const erros: Post = {
     "Os erros mais comuns na hora de pedir a bolsa ou a lixeira de carro em neoprene personalizada — e como evitá-los.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "neoprene",
+  imagemCapa: getImagemProduto("bolsa-neoprene-personalizada"),
   produtosRelacionados: ["bolsa-neoprene-personalizada", "lixeira-carro-personalizada"],
   dataPublicacao: "2026-02-24T17:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",

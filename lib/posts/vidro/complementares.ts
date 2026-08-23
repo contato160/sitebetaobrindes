@@ -1,4 +1,5 @@
 import type { Post } from "../../posts";
+import { getImagemProduto } from "../../imagens";
 import { ctaWhatsAppHtml, produtoLink, pilarProdutoLink, categoriaLink } from "../../postBlocks";
 
 const linkCategoria = categoriaLink("Produtos em Vidro Personalizados", "vidro");
@@ -25,6 +26,7 @@ const preco: Post = {
     "Como o preço varia entre caneca de chopp, taça e copo de vidro personalizados, por tamanho, acabamento e quantidade.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "vidro",
+  imagemCapa: getImagemProduto("caneca-chopp-vidro-475ml-transparente-personalizada"),
   produtosRelacionados: ["caneca-chopp-vidro-475ml-transparente-personalizada", "taca-vidro-300ml-transparente-personalizada", "copo-dose-vidro-48ml-personalizado"],
   dataPublicacao: "2026-03-03T09:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -59,6 +61,7 @@ const comparacaoTecnicas: Post = {
     "Diferenças visuais e práticas entre o acabamento fosco e o transparente nos produtos de vidro personalizados por sublimação.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "vidro",
+  imagemCapa: getImagemProduto("caneca-chopp-vidro-475ml-fosca-personalizada"),
   produtosRelacionados: ["caneca-chopp-vidro-475ml-fosca-personalizada", "caneca-chopp-vidro-475ml-transparente-personalizada"],
   dataPublicacao: "2026-03-03T10:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -97,6 +100,7 @@ const guiaOcasiao: Post = {
     "Como escolher entre caneca de chopp, copo de whisky e taça de vidro personalizados para despedida de solteiro, churrasco ou happy hour.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "vidro",
+  imagemCapa: getImagemProduto("caneca-chopp-vidro-340ml-transparente-personalizada"),
   produtosRelacionados: ["caneca-chopp-vidro-340ml-transparente-personalizada", "copo-whisky-vidro-266ml-personalizado"],
   dataPublicacao: "2026-03-03T11:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -135,6 +139,7 @@ const b2b: Post = {
     "Como bares, cervejarias e distribuidoras usam a caneca de chopp e a taça de vidro personalizadas como brinde e material promocional.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "vidro",
+  imagemCapa: getImagemProduto("caneca-chopp-vidro-475ml-transparente-personalizada"),
   produtosRelacionados: ["caneca-chopp-vidro-475ml-transparente-personalizada", "taca-vidro-300ml-fosca-personalizada"],
   dataPublicacao: "2026-03-03T12:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -173,6 +178,7 @@ const b2c: Post = {
     "Como pedir a caneca de chopp, taça ou copo de vidro personalizado em pequena quantidade para presentear.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "vidro",
+  imagemCapa: getImagemProduto("caneca-vidro-320ml-transparente-personalizada"),
   produtosRelacionados: ["caneca-vidro-320ml-transparente-personalizada", "copo-dose-vidro-48ml-personalizado"],
   dataPublicacao: "2026-03-03T13:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -209,6 +215,7 @@ const cuidados: Post = {
     "Dicas de lavagem e uso para manter a estampa e a integridade da caneca de chopp e da taça de vidro personalizadas por mais tempo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "vidro",
+  imagemCapa: getImagemProduto("caneca-chopp-vidro-475ml-transparente-personalizada"),
   produtosRelacionados: ["caneca-chopp-vidro-475ml-transparente-personalizada", "taca-vidro-300ml-transparente-personalizada"],
   dataPublicacao: "2026-03-03T14:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -247,6 +254,7 @@ const comoEscolher: Post = {
     "Comparação entre os nove modelos de vidro personalizado do catálogo — caneca de chopp, taça, copo de whisky e copo dose.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "vidro",
+  imagemCapa: getImagemProduto("caneca-chopp-vidro-475ml-transparente-personalizada"),
   produtosRelacionados: ["caneca-chopp-vidro-475ml-transparente-personalizada", "taca-vidro-300ml-transparente-personalizada", "copo-whisky-vidro-266ml-personalizado"],
   dataPublicacao: "2026-03-03T15:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -285,6 +293,7 @@ const sustentabilidade: Post = {
     "Por que a caneca de chopp e o copo de vidro personalizados, sendo reutilizáveis, reduzem o consumo de copos plásticos descartáveis em eventos.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "vidro",
+  imagemCapa: getImagemProduto("caneca-chopp-vidro-340ml-fosca-personalizada"),
   produtosRelacionados: ["caneca-chopp-vidro-340ml-fosca-personalizada", "copo-dose-vidro-48ml-personalizado"],
   dataPublicacao: "2026-03-03T16:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -323,6 +332,7 @@ const erros: Post = {
     "Os erros mais comuns na hora de pedir caneca de chopp, taça ou copo de vidro personalizado — e como evitá-los.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "vidro",
+  imagemCapa: getImagemProduto("caneca-chopp-vidro-475ml-fosca-personalizada"),
   produtosRelacionados: ["caneca-chopp-vidro-475ml-fosca-personalizada", "taca-vidro-300ml-fosca-personalizada", "copo-dose-vidro-48ml-personalizado"],
   dataPublicacao: "2026-03-03T17:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",

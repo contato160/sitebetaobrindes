@@ -1,4 +1,5 @@
 import type { Post } from "../../posts";
+import { getImagemProduto } from "../../imagens";
 import { ctaWhatsAppHtml, produtoLink, pilarProdutoLink, categoriaLink } from "../../postBlocks";
 
 const linkCategoria = categoriaLink("Térmicos e Garrafas Personalizadas", "termicos");
@@ -15,6 +16,7 @@ const preco: Post = {
     "Como funciona o preço de térmicos e garrafas personalizadas por quantidade, quais fatores mudam o valor por unidade e como pedir um orçamento certeiro.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "termicos",
+  imagemCapa: getImagemProduto("garrafa-termica-500ml-personalizada"),
   produtosRelacionados: ["garrafa-termica-500ml-personalizada", "copo-termico-500ml-personalizado"],
   dataPublicacao: "2026-02-22T09:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -72,6 +74,7 @@ const comparacaoTecnicas: Post = {
     "Diferenças práticas entre DTF e sublimação na personalização de térmicos: durabilidade, tipo de superfície e quando cada técnica é usada.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "termicos",
+  imagemCapa: getImagemProduto("caneca-chopp-termica-709ml-personalizada"),
   produtosRelacionados: [
     "caneca-chopp-termica-709ml-personalizada",
     "squeeze-500ml-tipo-nike-personalizado",
@@ -129,6 +132,7 @@ const guiaOcasiao: Post = {
     "Como escolher e calcular a quantidade de térmicos personalizados para formatura ou casamento, com os modelos mais indicados para cada tipo de evento.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "termicos",
+  imagemCapa: getImagemProduto("caneca-chopp-termica-709ml-personalizada"),
   produtosRelacionados: [
     "caneca-chopp-termica-709ml-personalizada",
     "taca-gin-termica-degrade-personalizada",
@@ -186,6 +190,7 @@ const b2b: Post = {
     "Como pousadas e hotéis devem planejar a compra de térmicos personalizados em volume, com reposição e identidade visual do kit de boas-vindas.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "termicos",
+  imagemCapa: getImagemProduto("garrafa-termica-500ml-personalizada"),
   produtosRelacionados: ["garrafa-termica-500ml-personalizada", "copo-termico-500ml-personalizado"],
   dataPublicacao: "2026-02-22T12:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -240,6 +245,7 @@ const b2c: Post = {
     "Como pedir térmicos personalizados em pequena quantidade para presentear, dividindo o pedido mínimo entre amigos ou família.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "termicos",
+  imagemCapa: getImagemProduto("garrafa-termica-500ml-personalizada"),
   produtosRelacionados: ["garrafa-termica-500ml-personalizada", "caneca-termica-canudo-600ml-personalizada"],
   dataPublicacao: "2026-02-22T13:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -297,6 +303,7 @@ const cuidados: Post = {
     "Dicas práticas de lavagem e manutenção para preservar a arte impressa em térmicos e garrafas personalizadas por mais tempo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "termicos",
+  imagemCapa: getImagemProduto("copo-termico-500ml-personalizado"),
   produtosRelacionados: ["copo-termico-500ml-personalizado", "garrafa-termica-500ml-personalizada"],
   dataPublicacao: "2026-02-22T14:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -353,6 +360,7 @@ const comoEscolher: Post = {
     "Passo a passo para escolher o térmico personalizado certo entre os dez modelos do catálogo, considerando uso, volume e orçamento.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "termicos",
+  imagemCapa: getImagemProduto("garrafa-termica-500ml-personalizada"),
   produtosRelacionados: ["garrafa-termica-500ml-personalizada", "squeeze-500ml-tipo-nike-personalizado"],
   dataPublicacao: "2026-02-22T15:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -412,6 +420,7 @@ const sustentabilidade: Post = {
     "Como térmicos e garrafas personalizadas reduzem o uso de copos descartáveis e reforçam um posicionamento de marca mais consciente.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "termicos",
+  imagemCapa: getImagemProduto("garrafa-termica-500ml-personalizada"),
   produtosRelacionados: ["garrafa-termica-500ml-personalizada", "copo-termico-350ml-personalizado"],
   dataPublicacao: "2026-02-22T16:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -466,6 +475,7 @@ const erros: Post = {
     "Os erros mais comuns na hora de comprar térmicos e garrafas personalizadas — e como evitá-los antes de fechar o pedido.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "termicos",
+  imagemCapa: getImagemProduto("garrafa-termica-500ml-personalizada"),
   produtosRelacionados: ["garrafa-termica-500ml-personalizada", "caneca-chopp-termica-709ml-personalizada"],
   dataPublicacao: "2026-02-22T17:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",

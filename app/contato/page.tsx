@@ -26,7 +26,7 @@ export default function ContatoPage() {
           é feito online, do orçamento à aprovação da arte.
         </p>
 
-        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className={`mt-10 grid grid-cols-1 gap-6 ${NEGOCIO.instagram ? "md:grid-cols-3" : "md:grid-cols-2"}`}>
           <a
             href={linkWhatsApp("Olá! Quero falar sobre um pedido de brindes personalizados.")}
             target="_blank"
@@ -45,16 +45,18 @@ export default function ContatoPage() {
             <div className="text-lg font-medium">{NEGOCIO.email}</div>
             <div className="mt-1 text-sm text-ink-soft">Para orçamentos formais e follow-up</div>
           </a>
-          <a
-            href={NEGOCIO.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-[3px] border border-line bg-paper-2 p-6 hover:border-brass"
-          >
-            <div className="mb-2 font-mono text-xs uppercase tracking-[0.06em] text-brass-dark">Instagram</div>
-            <div className="text-lg font-medium">@essenzabrindes</div>
-            <div className="mt-1 text-sm text-ink-soft">Fotos de peças já produzidas</div>
-          </a>
+          {NEGOCIO.instagram && (
+            <a
+              href={NEGOCIO.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-[3px] border border-line bg-paper-2 p-6 hover:border-brass"
+            >
+              <div className="mb-2 font-mono text-xs uppercase tracking-[0.06em] text-brass-dark">Instagram</div>
+              <div className="text-lg font-medium">@essenzabrindes</div>
+              <div className="mt-1 text-sm text-ink-soft">Fotos de peças já produzidas</div>
+            </a>
+          )}
         </div>
       </section>
       <Footer />

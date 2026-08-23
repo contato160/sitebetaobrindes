@@ -1,4 +1,5 @@
 import type { Post } from "../../posts";
+import { getImagemProduto } from "../../imagens";
 import { ctaWhatsAppHtml, produtoLink, pilarProdutoLink, categoriaLink } from "../../postBlocks";
 
 const linkCategoria = categoriaLink("Bolsas Personalizadas", "bolsas");
@@ -30,6 +31,7 @@ const preco: Post = {
     "Como o preço varia entre ecobag, mochilão e tote bag personalizados, os modelos mais pedidos da categoria de bolsas.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "bolsas",
+  imagemCapa: getImagemProduto("ecobag-personalizada"),
   produtosRelacionados: ["ecobag-personalizada", "mochilao-personalizado", "tote-bag-personalizada"],
   dataPublicacao: "2026-03-05T09:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -64,6 +66,7 @@ const comparacaoTecnicas: Post = {
     "Diferenças entre os principais materiais usados nas bolsas personalizadas do catálogo — lona, tecido e neoprene.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "bolsas",
+  imagemCapa: getImagemProduto("bolsa-lona-crua-personalizada"),
   produtosRelacionados: ["bolsa-lona-crua-personalizada", "shoulder-bag-tecido-personalizada", "shoulder-bag-neoprene-personalizada"],
   dataPublicacao: "2026-03-05T10:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -102,6 +105,7 @@ const guiaOcasiao: Post = {
     "Como escolher entre ecobag, pochete de lona e mochilão personalizados conforme o uso: feira, viagem ou dia a dia.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "bolsas",
+  imagemCapa: getImagemProduto("ecobag-personalizada"),
   produtosRelacionados: ["ecobag-personalizada", "pochete-lona-personalizada", "mochilao-personalizado"],
   dataPublicacao: "2026-03-05T11:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -140,6 +144,7 @@ const b2b: Post = {
     "Como empresas usam a ecobag e a tote bag black personalizadas como brinde institucional em feiras, eventos e kits de boas-vindas.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "bolsas",
+  imagemCapa: getImagemProduto("ecobag-personalizada"),
   produtosRelacionados: ["ecobag-personalizada", "tote-bag-black-personalizada"],
   dataPublicacao: "2026-03-05T12:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -178,6 +183,7 @@ const b2c: Post = {
     "Como pedir a bolsa puffer ou a tote minimalista personalizada em pequena quantidade para presentear.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "bolsas",
+  imagemCapa: getImagemProduto("bolsa-puffer-personalizada"),
   produtosRelacionados: ["bolsa-puffer-personalizada", "tote-minimalista-personalizada"],
   dataPublicacao: "2026-03-05T13:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -214,6 +220,7 @@ const cuidados: Post = {
     "Dicas de limpeza e conservação para a bolsa de lona preta e a bolsa com alça em PU personalizadas manterem o visual por mais tempo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "bolsas",
+  imagemCapa: getImagemProduto("bolsa-lona-preta-personalizada"),
   produtosRelacionados: ["bolsa-lona-preta-personalizada", "bolsa-lona-alca-pu-personalizada"],
   dataPublicacao: "2026-03-05T14:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -252,6 +259,7 @@ const comoEscolher: Post = {
     "Comparação entre as três variações de tote bag personalizada do catálogo para ajudar a decidir qual pedir.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "bolsas",
+  imagemCapa: getImagemProduto("tote-bag-personalizada"),
   produtosRelacionados: ["tote-bag-personalizada", "tote-bag-black-personalizada", "tote-minimalista-personalizada"],
   dataPublicacao: "2026-03-05T15:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -291,6 +299,7 @@ const sustentabilidade: Post = {
     "Por que a ecobag e a bolsa de lona crua personalizadas, sendo reutilizáveis, reduzem o consumo de sacolas plásticas descartáveis.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "bolsas",
+  imagemCapa: getImagemProduto("ecobag-personalizada"),
   produtosRelacionados: ["ecobag-personalizada", "bolsa-lona-crua-personalizada"],
   dataPublicacao: "2026-03-05T16:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -329,6 +338,7 @@ const erros: Post = {
     "Os erros mais comuns na hora de pedir bolsa Atheta, bolsa de transporte para roupas ou shoulder bag personalizada — e como evitá-los.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "bolsas",
+  imagemCapa: getImagemProduto("bolsa-atheta-personalizada-1"),
   produtosRelacionados: ["bolsa-atheta-personalizada-1", "bolsa-transporte-roupas-personalizada", "shoulder-bag-tecido-personalizada"],
   dataPublicacao: "2026-03-05T17:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",

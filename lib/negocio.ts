@@ -4,7 +4,9 @@ export const NEGOCIO = {
   whatsapp: "5511970139447",
   telefoneDisplay: "(11) 97013-9447",
   email: "contato@essenzabrindes.com.br",
-  instagram: "https://instagram.com/essenzabrindes",
+  // Perfil ainda não criado — preencher com o link assim que o Instagram existir.
+  // Enquanto vazio, o card de contato e o schema.org (sameAs) ocultam o Instagram automaticamente.
+  instagram: "",
   pedidoMinimoPadrao: 20,
   prazoProducaoPadrao: "10–20 dias úteis",
 } as const;

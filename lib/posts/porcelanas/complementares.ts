@@ -1,4 +1,5 @@
 import type { Post } from "../../posts";
+import { getImagemProduto } from "../../imagens";
 import { ctaWhatsAppHtml, produtoLink, pilarProdutoLink, categoriaLink } from "../../postBlocks";
 
 const linkCategoria = categoriaLink("Porcelanas Personalizadas", "porcelanas");
@@ -23,6 +24,7 @@ const preco: Post = {
     "Como o preço da caneca e xícara de porcelana personalizada varia por tamanho, acabamento e quantidade.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porcelanas",
+  imagemCapa: getImagemProduto("caneca-porcelana-100ml-personalizada"),
   produtosRelacionados: ["caneca-porcelana-100ml-personalizada", "caneca-porcelana-fall-350ml-personalizada", "xicara-petit-pires-90ml-personalizada"],
   dataPublicacao: "2026-03-02T09:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -57,6 +59,7 @@ const comparacaoTecnicas: Post = {
     "Como a sublimação transforma uma caneca de porcelana branca em uma peça personalizada, e por que a técnica resiste bem ao uso diário.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porcelanas",
+  imagemCapa: getImagemProduto("caneca-porcelana-100ml-personalizada"),
   produtosRelacionados: ["caneca-porcelana-100ml-personalizada", "caneca-porcelana-biona-300ml-personalizada"],
   dataPublicacao: "2026-03-02T10:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -95,6 +98,7 @@ const guiaOcasiao: Post = {
     "Como escolher entre os modelos de caneca e xícara de porcelana personalizada para lembrancinha de casamento, chá de bebê ou aniversário.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porcelanas",
+  imagemCapa: getImagemProduto("caneca-porcelana-alca-coracao-personalizada"),
   produtosRelacionados: ["caneca-porcelana-alca-coracao-personalizada", "xicara-petit-pires-90ml-personalizada"],
   dataPublicacao: "2026-03-02T11:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -133,6 +137,7 @@ const b2b: Post = {
     "Como empresas usam a caneca de porcelana personalizada como brinde de escritório, kit de boas-vindas ou lembrança institucional.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porcelanas",
+  imagemCapa: getImagemProduto("caneca-porcelana-biona-300ml-personalizada"),
   produtosRelacionados: ["caneca-porcelana-biona-300ml-personalizada", "caneca-porcelana-fall-350ml-personalizada"],
   dataPublicacao: "2026-03-02T12:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -171,6 +176,7 @@ const b2c: Post = {
     "Como pedir a caneca ou xícara de porcelana personalizada em pequena quantidade, dividindo o pedido mínimo entre amigos ou família.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porcelanas",
+  imagemCapa: getImagemProduto("caneca-porcelana-interior-alca-colorida-personalizada"),
   produtosRelacionados: ["caneca-porcelana-interior-alca-colorida-personalizada", "xicara-pires-porcelana-180ml-personalizada"],
   dataPublicacao: "2026-03-02T13:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -207,6 +213,7 @@ const cuidados: Post = {
     "Dicas de lavagem e uso para manter a estampa por sublimação da caneca de porcelana personalizada vívida por mais tempo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porcelanas",
+  imagemCapa: getImagemProduto("caneca-porcelana-100ml-personalizada"),
   produtosRelacionados: ["caneca-porcelana-100ml-personalizada", "caneca-porcelana-fall-350ml-personalizada"],
   dataPublicacao: "2026-03-02T14:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -245,6 +252,7 @@ const comoEscolher: Post = {
     "Comparação entre os sete modelos de caneca e xícara de porcelana personalizada do catálogo para ajudar a decidir qual pedir.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porcelanas",
+  imagemCapa: getImagemProduto("caneca-porcelana-biona-300ml-personalizada"),
   produtosRelacionados: ["caneca-porcelana-biona-300ml-personalizada", "caneca-porcelana-alca-coracao-personalizada", "xicara-pires-porcelana-180ml-personalizada"],
   dataPublicacao: "2026-03-02T15:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -280,6 +288,7 @@ const sustentabilidade: Post = {
     "Por que a caneca de porcelana personalizada, sendo reutilizável, reduz o consumo de copos descartáveis no escritório ou em casa.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porcelanas",
+  imagemCapa: getImagemProduto("caneca-porcelana-biona-300ml-personalizada"),
   produtosRelacionados: ["caneca-porcelana-biona-300ml-personalizada", "caneca-porcelana-100ml-personalizada"],
   dataPublicacao: "2026-03-02T16:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -318,6 +327,7 @@ const erros: Post = {
     "Os erros mais comuns na hora de pedir caneca ou xícara de porcelana personalizada — e como evitá-los antes de fechar o pedido.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porcelanas",
+  imagemCapa: getImagemProduto("caneca-porcelana-fall-350ml-personalizada"),
   produtosRelacionados: ["caneca-porcelana-fall-350ml-personalizada", "xicara-petit-pires-90ml-personalizada", "caneca-porcelana-100ml-personalizada"],
   dataPublicacao: "2026-03-02T17:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",

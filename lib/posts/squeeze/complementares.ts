@@ -1,4 +1,5 @@
 import type { Post } from "../../posts";
+import { getImagemProduto } from "../../imagens";
 import { ctaWhatsAppHtml, produtoLink, pilarProdutoLink, categoriaLink } from "../../postBlocks";
 
 const linkCategoria = categoriaLink("Squeezes Personalizados", "squeeze");
@@ -20,6 +21,7 @@ const preco: Post = {
     "Como o preço do squeeze personalizado varia entre os modelos de alumínio, térmico, plástico e vidro do catálogo, por quantidade.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "squeeze",
+  imagemCapa: getImagemProduto("squeeze-500ml-tipo-nike-personalizado"),
   produtosRelacionados: ["squeeze-500ml-tipo-nike-personalizado", "squeeze-aluminio-efeito-magico-500ml-personalizado", "squeeze-termico-tampa-emborrachada-900ml-personalizado"],
   dataPublicacao: "2026-02-26T09:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -54,6 +56,7 @@ const comparacaoTecnicas: Post = {
     "Por que o squeeze de vidro usa DTF sem resina em vez de sublimação, e o que isso significa na prática para quem compra.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "squeeze",
+  imagemCapa: getImagemProduto("squeeze-vidro-fresh-400ml-personalizado"),
   produtosRelacionados: ["squeeze-vidro-fresh-400ml-personalizado", "squeeze-500ml-tipo-nike-personalizado"],
   dataPublicacao: "2026-02-26T10:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -92,6 +95,7 @@ const guiaOcasiao: Post = {
     "Como escolher entre os modelos de squeeze personalizado conforme o uso: treino, corrida, escritório ou uso casual.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "squeeze",
+  imagemCapa: getImagemProduto("squeeze-500ml-tipo-nike-personalizado"),
   produtosRelacionados: ["squeeze-500ml-tipo-nike-personalizado", "squeeze-termico-tampa-emborrachada-900ml-personalizado"],
   dataPublicacao: "2026-02-26T11:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -130,6 +134,7 @@ const b2b: Post = {
     "Como empresas usam o squeeze personalizado em campanhas de bem-estar, eventos corporativos e programas de qualidade de vida.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "squeeze",
+  imagemCapa: getImagemProduto("squeeze-500ml-tipo-nike-personalizado"),
   produtosRelacionados: ["squeeze-500ml-tipo-nike-personalizado", "squeeze-aluminio-efeito-magico-500ml-personalizado", "squeeze-termico-tampa-emborrachada-900ml-personalizado"],
   dataPublicacao: "2026-02-26T12:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -168,6 +173,7 @@ const b2c: Post = {
     "Como pedir o squeeze personalizado em pequena quantidade, dividindo o pedido mínimo entre amigos ou família.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "squeeze",
+  imagemCapa: getImagemProduto("squeeze-vidro-fresh-400ml-personalizado"),
   produtosRelacionados: ["squeeze-vidro-fresh-400ml-personalizado", "squeeze-aluminio-efeito-magico-500ml-personalizado"],
   dataPublicacao: "2026-02-26T13:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -204,6 +210,7 @@ const cuidados: Post = {
     "Dicas de limpeza e conservação para os diferentes modelos de squeeze personalizado do catálogo — plástico, alumínio, vidro e térmico.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "squeeze",
+  imagemCapa: getImagemProduto("squeeze-termico-tampa-emborrachada-900ml-personalizado"),
   produtosRelacionados: ["squeeze-termico-tampa-emborrachada-900ml-personalizado", "squeeze-vidro-fresh-400ml-personalizado"],
   dataPublicacao: "2026-02-26T14:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -242,6 +249,7 @@ const comoEscolher: Post = {
     "Comparação entre os quatro modelos de squeeze personalizado do catálogo para ajudar a decidir qual pedir.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "squeeze",
+  imagemCapa: getImagemProduto("squeeze-500ml-tipo-nike-personalizado"),
   produtosRelacionados: ["squeeze-500ml-tipo-nike-personalizado", "squeeze-termico-tampa-emborrachada-900ml-personalizado", "squeeze-vidro-fresh-400ml-personalizado"],
   dataPublicacao: "2026-02-26T15:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -280,6 +288,7 @@ const sustentabilidade: Post = {
     "Por que o squeeze personalizado, sendo reutilizável, reduz o consumo de garrafas plásticas descartáveis no dia a dia.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "squeeze",
+  imagemCapa: getImagemProduto("squeeze-500ml-tipo-nike-personalizado"),
   produtosRelacionados: ["squeeze-500ml-tipo-nike-personalizado", "squeeze-aluminio-efeito-magico-500ml-personalizado"],
   dataPublicacao: "2026-02-26T16:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -318,6 +327,7 @@ const erros: Post = {
     "Os erros mais comuns na hora de pedir squeeze personalizado — e como evitá-los antes de fechar o pedido.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "squeeze",
+  imagemCapa: getImagemProduto("squeeze-termico-tampa-emborrachada-900ml-personalizado"),
   produtosRelacionados: ["squeeze-termico-tampa-emborrachada-900ml-personalizado", "squeeze-vidro-fresh-400ml-personalizado"],
   dataPublicacao: "2026-02-26T17:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",

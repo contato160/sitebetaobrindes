@@ -1,4 +1,5 @@
 import type { Post } from "../../posts";
+import { getImagemProduto } from "../../imagens";
 import { ctaWhatsAppHtml, produtoLink, pilarProdutoLink, categoriaLink } from "../../postBlocks";
 
 const linkCategoria = categoriaLink("Brindes Variados", "variados");
@@ -26,6 +27,7 @@ const preco: Post = {
     "Como o preço varia entre chaveiro, mouse pad e porta-vinho personalizados, os diferentes itens da categoria de brindes variados.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "variados",
+  imagemCapa: getImagemProduto("chaveiro-couro-personalizado"),
   produtosRelacionados: ["chaveiro-couro-personalizado", "mouse-pad-personalizado", "porta-vinho-personalizado"],
   dataPublicacao: "2026-03-04T09:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -60,6 +62,7 @@ const comparacaoTecnicas: Post = {
     "Por que o chaveiro de couro usa uma técnica diferente do mouse pad na personalização, e o que isso significa para o resultado final.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "variados",
+  imagemCapa: getImagemProduto("chaveiro-couro-personalizado"),
   produtosRelacionados: ["chaveiro-couro-personalizado", "mouse-pad-personalizado"],
   dataPublicacao: "2026-03-04T10:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -98,6 +101,7 @@ const guiaOcasiao: Post = {
     "Como o porta-tag de mala e o chaveiro para AirTag personalizados ajudam a identificar bagagem e pertences em viagem.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "variados",
+  imagemCapa: getImagemProduto("porta-tag-mala-personalizado"),
   produtosRelacionados: ["porta-tag-mala-personalizado", "chaveiro-airtag-personalizado"],
   dataPublicacao: "2026-03-04T11:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -136,6 +140,7 @@ const b2b: Post = {
     "Como empresas usam o chaveiro de couro e o mouse pad personalizados em kits de boas-vindas e brindes de escritório.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "variados",
+  imagemCapa: getImagemProduto("chaveiro-couro-personalizado"),
   produtosRelacionados: ["chaveiro-couro-personalizado", "mouse-pad-personalizado"],
   dataPublicacao: "2026-03-04T12:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -174,6 +179,7 @@ const b2c: Post = {
     "Como pedir a máscara de dormir ou o porta-óculos personalizado em pequena quantidade para presentear.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "variados",
+  imagemCapa: getImagemProduto("mascara-dormir-personalizada"),
   produtosRelacionados: ["mascara-dormir-personalizada", "porta-oculos-personalizado-1"],
   dataPublicacao: "2026-03-04T13:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -210,6 +216,7 @@ const cuidados: Post = {
     "Dicas de limpeza e conservação para o jogo americano e o porta-vinho personalizados manterem o visual por mais tempo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "variados",
+  imagemCapa: getImagemProduto("jogo-americano-personalizado"),
   produtosRelacionados: ["jogo-americano-personalizado", "porta-vinho-personalizado"],
   dataPublicacao: "2026-03-04T14:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -248,6 +255,7 @@ const comoEscolher: Post = {
     "Comparação entre os dois modelos de porta-tag de mala personalizado — com botão e sem botão — para ajudar a decidir qual pedir.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "variados",
+  imagemCapa: getImagemProduto("porta-tag-mala-botao-personalizado"),
   produtosRelacionados: ["porta-tag-mala-botao-personalizado", "porta-tag-mala-personalizado"],
   dataPublicacao: "2026-03-04T15:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -284,6 +292,7 @@ const sustentabilidade: Post = {
     "Por que o mouse pad e o jogo americano personalizados, sendo reutilizáveis, são uma alternativa consciente a itens descartáveis do dia a dia.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "variados",
+  imagemCapa: getImagemProduto("mouse-pad-personalizado"),
   produtosRelacionados: ["mouse-pad-personalizado", "jogo-americano-personalizado"],
   dataPublicacao: "2026-03-04T16:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -322,6 +331,7 @@ const erros: Post = {
     "Os erros mais comuns na hora de pedir chaveiro, porta-óculos ou máscara de dormir personalizada — e como evitá-los.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "variados",
+  imagemCapa: getImagemProduto("chaveiro-airtag-personalizado"),
   produtosRelacionados: ["chaveiro-airtag-personalizado", "porta-oculos-personalizado-2", "mascara-dormir-personalizada"],
   dataPublicacao: "2026-03-04T17:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",

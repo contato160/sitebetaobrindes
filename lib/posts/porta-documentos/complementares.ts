@@ -1,4 +1,5 @@
 import type { Post } from "../../posts";
+import { getImagemProduto } from "../../imagens";
 import { ctaWhatsAppHtml, produtoLink, pilarProdutoLink, categoriaLink } from "../../postBlocks";
 
 const linkCategoria = categoriaLink("Porta-documentos Executivos", "porta-documentos");
@@ -21,6 +22,7 @@ const preco: Post = {
     "Como o preço varia entre pasta executiva, porta-tablet e porta-documentos personalizados, por modelo e quantidade.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-documentos",
+  imagemCapa: getImagemProduto("pasta-executiva-personalizada"),
   produtosRelacionados: ["pasta-executiva-personalizada", "porta-tablet-personalizado-1", "porta-documentos-personalizado-1"],
   dataPublicacao: "2026-02-27T09:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -55,6 +57,7 @@ const comparacaoTecnicas: Post = {
     "Diferenças entre os dois modelos de fechamento do porta-documentos personalizado e qual escolher conforme o uso.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-documentos",
+  imagemCapa: getImagemProduto("porta-documentos-personalizado-1"),
   produtosRelacionados: ["porta-documentos-personalizado-1", "porta-documentos-personalizado-2"],
   dataPublicacao: "2026-02-27T10:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -93,6 +96,7 @@ const guiaOcasiao: Post = {
     "Como escolher entre a pasta executiva e o porta-tablet personalizados para formaturas, congressos e eventos corporativos.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-documentos",
+  imagemCapa: getImagemProduto("pasta-executiva-personalizada"),
   produtosRelacionados: ["pasta-executiva-personalizada", "porta-tablet-personalizado-1"],
   dataPublicacao: "2026-02-27T11:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -131,6 +135,7 @@ const b2b: Post = {
     "Como empresas usam a pasta executiva e o porta-documentos personalizados como brinde institucional e material de apoio corporativo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-documentos",
+  imagemCapa: getImagemProduto("pasta-executiva-personalizada"),
   produtosRelacionados: ["pasta-executiva-personalizada", "porta-documentos-personalizado-1"],
   dataPublicacao: "2026-02-27T12:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -169,6 +174,7 @@ const b2c: Post = {
     "Como pedir o porta-tablet ou o porta-documentos personalizado em pequena quantidade para presentear.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-documentos",
+  imagemCapa: getImagemProduto("porta-tablet-personalizado-2"),
   produtosRelacionados: ["porta-tablet-personalizado-2", "porta-documentos-personalizado-2"],
   dataPublicacao: "2026-02-27T13:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -205,6 +211,7 @@ const cuidados: Post = {
     "Dicas de limpeza e conservação para a pasta executiva e o porta-tablet personalizados manterem o visual por mais tempo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-documentos",
+  imagemCapa: getImagemProduto("pasta-executiva-personalizada"),
   produtosRelacionados: ["pasta-executiva-personalizada", "porta-tablet-personalizado-1"],
   dataPublicacao: "2026-02-27T14:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -243,6 +250,7 @@ const comoEscolher: Post = {
     "Comparação entre os dois modelos de porta-tablet personalizado — envelope e faixa elástica — para ajudar a decidir qual pedir.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-documentos",
+  imagemCapa: getImagemProduto("porta-tablet-personalizado-1"),
   produtosRelacionados: ["porta-tablet-personalizado-1", "porta-tablet-personalizado-2"],
   dataPublicacao: "2026-02-27T15:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -279,6 +287,7 @@ const sustentabilidade: Post = {
     "Por que a pasta executiva e o porta-documentos personalizados, sendo peças duráveis, reduzem o consumo de materiais de escritório descartáveis.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-documentos",
+  imagemCapa: getImagemProduto("pasta-executiva-personalizada"),
   produtosRelacionados: ["pasta-executiva-personalizada", "porta-documentos-personalizado-1"],
   dataPublicacao: "2026-02-27T16:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -317,6 +326,7 @@ const erros: Post = {
     "Os erros mais comuns na hora de pedir pasta executiva, porta-tablet ou porta-documentos personalizado — e como evitá-los.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-documentos",
+  imagemCapa: getImagemProduto("porta-tablet-personalizado-1"),
   produtosRelacionados: ["porta-tablet-personalizado-1", "porta-documentos-personalizado-1", "pasta-executiva-personalizada"],
   dataPublicacao: "2026-02-27T17:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",

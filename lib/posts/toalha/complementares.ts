@@ -1,4 +1,5 @@
 import type { Post } from "../../posts";
+import { getImagemProduto } from "../../imagens";
 import { ctaWhatsAppHtml, produtoLink, pilarProdutoLink, categoriaLink } from "../../postBlocks";
 
 const linkCategoria = categoriaLink("Toalhas Personalizadas", "toalha");
@@ -18,6 +19,7 @@ const preco: Post = {
     "Como funciona o preço da toalha de lavabo personalizada por tamanho e quantidade, e como pedir um orçamento certeiro.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "toalha",
+  imagemCapa: getImagemProduto("toalha-lavabo-29x45-personalizada"),
   produtosRelacionados: ["toalha-lavabo-29x45-personalizada", "toalha-lavabinho-21x38-personalizada"],
   dataPublicacao: "2026-02-25T09:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -52,6 +54,7 @@ const comparacaoTecnicas: Post = {
     "Diferenças entre sublimação e bordado na personalização de toalhas de lavabo, e por que a sublimação é usada neste catálogo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "toalha",
+  imagemCapa: getImagemProduto("toalha-lavabo-29x45-personalizada"),
   produtosRelacionados: ["toalha-lavabo-29x45-personalizada", "toalha-lavabinho-21x38-personalizada"],
   dataPublicacao: "2026-02-25T10:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -90,6 +93,7 @@ const guiaOcasiao: Post = {
     "Como escolher entre os tamanhos de toalha personalizada para presente de casamento, chá de casa nova ou uso hoteleiro.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "toalha",
+  imagemCapa: getImagemProduto("toalha-lavabo-29x45-personalizada"),
   produtosRelacionados: ["toalha-lavabo-29x45-personalizada", "toalha-lavabinho-21x38-personalizada"],
   dataPublicacao: "2026-02-25T11:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -128,6 +132,7 @@ const b2b: Post = {
     "Como hotéis e pousadas usam a toalha de lavabo personalizada com a marca do estabelecimento, e como planejar o pedido em volume.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "toalha",
+  imagemCapa: getImagemProduto("toalha-lavabo-29x45-personalizada"),
   produtosRelacionados: ["toalha-lavabo-29x45-personalizada", "toalha-lavabinho-21x38-personalizada"],
   dataPublicacao: "2026-02-25T12:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -166,6 +171,7 @@ const b2c: Post = {
     "Como pedir a toalha de lavabo personalizada em pequena quantidade, dividindo o pedido mínimo entre amigos ou família.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "toalha",
+  imagemCapa: getImagemProduto("toalha-lavabo-29x45-personalizada"),
   produtosRelacionados: ["toalha-lavabo-29x45-personalizada", "toalha-lavabinho-21x38-personalizada"],
   dataPublicacao: "2026-02-25T13:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -206,6 +212,7 @@ const cuidados: Post = {
     "Dicas de lavagem e conservação para manter a estampa da toalha de lavabo personalizada por sublimação vívida por mais tempo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "toalha",
+  imagemCapa: getImagemProduto("toalha-lavabo-29x45-personalizada"),
   produtosRelacionados: ["toalha-lavabo-29x45-personalizada", "toalha-lavabinho-21x38-personalizada"],
   dataPublicacao: "2026-02-25T14:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -248,6 +255,7 @@ const comoEscolher: Post = {
     "Comparação entre a toalha de lavabo 29x45cm e a lavabinho 21x38cm para ajudar a decidir qual tamanho pedir.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "toalha",
+  imagemCapa: getImagemProduto("toalha-lavabo-29x45-personalizada"),
   produtosRelacionados: ["toalha-lavabo-29x45-personalizada", "toalha-lavabinho-21x38-personalizada"],
   dataPublicacao: "2026-02-25T15:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -292,6 +300,7 @@ const sustentabilidade: Post = {
     "Por que a toalha de lavabo personalizada, sendo reutilizável e lavável, é uma alternativa mais consciente a itens de banheiro descartáveis.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "toalha",
+  imagemCapa: getImagemProduto("toalha-lavabo-29x45-personalizada"),
   produtosRelacionados: ["toalha-lavabo-29x45-personalizada", "toalha-lavabinho-21x38-personalizada"],
   dataPublicacao: "2026-02-25T16:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -330,6 +339,7 @@ const erros: Post = {
     "Os erros mais comuns na hora de pedir toalha de lavabo personalizada — e como evitá-los antes de fechar o pedido.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "toalha",
+  imagemCapa: getImagemProduto("toalha-lavabo-29x45-personalizada"),
   produtosRelacionados: ["toalha-lavabo-29x45-personalizada", "toalha-lavabinho-21x38-personalizada"],
   dataPublicacao: "2026-02-25T17:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",

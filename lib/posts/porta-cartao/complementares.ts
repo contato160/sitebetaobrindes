@@ -1,4 +1,5 @@
 import type { Post } from "../../posts";
+import { getImagemProduto } from "../../imagens";
 import { ctaWhatsAppHtml, produtoLink, pilarProdutoLink, categoriaLink } from "../../postBlocks";
 
 const linkCategoria = categoriaLink("Porta-cartões Personalizados", "porta-cartao");
@@ -22,6 +23,7 @@ const preco: Post = {
     "Como o preço varia entre porta-cartão de couro, sintético, costurado e a carteira slim personalizados, por quantidade.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-cartao",
+  imagemCapa: getImagemProduto("porta-cartao-sintetico-personalizado"),
   produtosRelacionados: ["porta-cartao-sintetico-personalizado", "porta-cartao-couro-personalizado-1", "carteira-slim-couro-personalizada"],
   dataPublicacao: "2026-03-01T09:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -56,6 +58,7 @@ const comparacaoTecnicas: Post = {
     "Diferenças entre o porta-cartão de couro legítimo/sintético e o modelo sintético mais econômico, e qual escolher conforme o objetivo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-cartao",
+  imagemCapa: getImagemProduto("porta-cartao-couro-personalizado-1"),
   produtosRelacionados: ["porta-cartao-couro-personalizado-1", "porta-cartao-sintetico-personalizado"],
   dataPublicacao: "2026-03-01T10:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -94,6 +97,7 @@ const guiaOcasiao: Post = {
     "Como escolher o modelo de porta-cartão personalizado para formaturas, eventos de networking e feiras de negócios.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-cartao",
+  imagemCapa: getImagemProduto("porta-cartao-costurado-personalizado"),
   produtosRelacionados: ["porta-cartao-costurado-personalizado", "carteira-slim-couro-personalizada"],
   dataPublicacao: "2026-03-01T11:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -132,6 +136,7 @@ const b2b: Post = {
     "Como empresas usam o porta-cartão de couro e o porta-notas personalizados como brinde institucional para clientes e equipe.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-cartao",
+  imagemCapa: getImagemProduto("porta-cartao-couro-personalizado-2"),
   produtosRelacionados: ["porta-cartao-couro-personalizado-2", "porta-notas-personalizado"],
   dataPublicacao: "2026-03-01T12:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -170,6 +175,7 @@ const b2c: Post = {
     "Como pedir o porta-cartão de couro ou a carteira slim personalizada em pequena quantidade para presentear.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-cartao",
+  imagemCapa: getImagemProduto("porta-cartao-couro-personalizado-1"),
   produtosRelacionados: ["porta-cartao-couro-personalizado-1", "carteira-slim-couro-personalizada"],
   dataPublicacao: "2026-03-01T13:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -206,6 +212,7 @@ const cuidados: Post = {
     "Dicas de limpeza e conservação para o porta-cartão de couro e a carteira slim personalizados manterem o visual por mais tempo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-cartao",
+  imagemCapa: getImagemProduto("porta-cartao-couro-personalizado-1"),
   produtosRelacionados: ["porta-cartao-couro-personalizado-1", "carteira-slim-couro-personalizada"],
   dataPublicacao: "2026-03-01T14:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -244,6 +251,7 @@ const comoEscolher: Post = {
     "Comparação entre os seis modelos de porta-cartão personalizado do catálogo para ajudar a decidir qual pedir.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-cartao",
+  imagemCapa: getImagemProduto("porta-cartao-couro-personalizado-2"),
   produtosRelacionados: ["porta-cartao-couro-personalizado-2", "porta-cartao-costurado-personalizado", "carteira-slim-couro-personalizada"],
   dataPublicacao: "2026-03-01T15:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -283,6 +291,7 @@ const sustentabilidade: Post = {
     "Por que o porta-cartão de couro e a carteira slim personalizados, sendo peças duráveis, são uma alternativa consciente a itens de baixa durabilidade.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-cartao",
+  imagemCapa: getImagemProduto("porta-cartao-couro-personalizado-1"),
   produtosRelacionados: ["porta-cartao-couro-personalizado-1", "carteira-slim-couro-personalizada"],
   dataPublicacao: "2026-03-01T16:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -321,6 +330,7 @@ const erros: Post = {
     "Os erros mais comuns na hora de pedir porta-cartão ou carteira slim personalizada — e como evitá-los antes de fechar o pedido.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "porta-cartao",
+  imagemCapa: getImagemProduto("porta-cartao-sintetico-personalizado"),
   produtosRelacionados: ["porta-cartao-sintetico-personalizado", "carteira-slim-couro-personalizada", "porta-notas-personalizado"],
   dataPublicacao: "2026-03-01T17:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",

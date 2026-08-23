@@ -1,4 +1,5 @@
 import type { Post } from "../../posts";
+import { getImagemProduto } from "../../imagens";
 import { ctaWhatsAppHtml, produtoLink, pilarProdutoLink, categoriaLink } from "../../postBlocks";
 
 const linkCategoria = categoriaLink("Necessaires Personalizadas", "necessaire");
@@ -22,6 +23,7 @@ const preco: Post = {
     "Como o preço da necessaire personalizada varia entre os modelos cristal, couro e puffer do catálogo, por quantidade.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "necessaire",
+  imagemCapa: getImagemProduto("necessaire-cristal-personalizada"),
   produtosRelacionados: ["necessaire-cristal-personalizada", "necessaire-couro-personalizada", "necessaire-puffer-personalizada"],
   dataPublicacao: "2026-02-28T09:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -56,6 +58,7 @@ const comparacaoTecnicas: Post = {
     "Diferenças entre os três materiais de necessaire personalizada do catálogo — PVC cristal, couro sintético e puffer acolchoado.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "necessaire",
+  imagemCapa: getImagemProduto("necessaire-cristal-personalizada"),
   produtosRelacionados: ["necessaire-cristal-personalizada", "necessaire-couro-personalizada", "necessaire-puffer-personalizada"],
   dataPublicacao: "2026-02-28T10:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -94,6 +97,7 @@ const guiaOcasiao: Post = {
     "Como a necessaire cristal e o porta-fone personalizados ajudam a organizar itens de viagem e uso diário.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "necessaire",
+  imagemCapa: getImagemProduto("necessaire-cristal-personalizada"),
   produtosRelacionados: ["necessaire-cristal-personalizada", "porta-fone-personalizado"],
   dataPublicacao: "2026-02-28T11:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -132,6 +136,7 @@ const b2b: Post = {
     "Como empresas e instituições de saúde usam a necessaire de couro e o porta-estetoscópio personalizados como brinde corporativo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "necessaire",
+  imagemCapa: getImagemProduto("necessaire-couro-personalizada"),
   produtosRelacionados: ["necessaire-couro-personalizada", "porta-estetoscopio-personalizado-2"],
   dataPublicacao: "2026-02-28T12:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -170,6 +175,7 @@ const b2c: Post = {
     "Como pedir a necessaire puffer ou o porta-fone personalizado em pequena quantidade para presentear.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "necessaire",
+  imagemCapa: getImagemProduto("necessaire-puffer-personalizada"),
   produtosRelacionados: ["necessaire-puffer-personalizada", "porta-fone-personalizado"],
   dataPublicacao: "2026-02-28T13:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -206,6 +212,7 @@ const cuidados: Post = {
     "Dicas de limpeza e conservação para a necessaire cristal e a necessaire de couro personalizadas manterem o visual por mais tempo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "necessaire",
+  imagemCapa: getImagemProduto("necessaire-cristal-personalizada"),
   produtosRelacionados: ["necessaire-cristal-personalizada", "necessaire-couro-personalizada"],
   dataPublicacao: "2026-02-28T14:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -244,6 +251,7 @@ const comoEscolher: Post = {
     "Comparação entre os dois modelos de porta-estetoscópio personalizado para ajudar profissionais da saúde a decidir qual pedir.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "necessaire",
+  imagemCapa: getImagemProduto("porta-estetoscopio-personalizado-1"),
   produtosRelacionados: ["porta-estetoscopio-personalizado-1", "porta-estetoscopio-personalizado-2"],
   dataPublicacao: "2026-02-28T15:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -280,6 +288,7 @@ const sustentabilidade: Post = {
     "Por que a necessaire de couro e a necessaire cristal personalizadas, sendo reutilizáveis, são uma alternativa consciente a saquinhos plásticos de uso único.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "necessaire",
+  imagemCapa: getImagemProduto("necessaire-couro-personalizada"),
   produtosRelacionados: ["necessaire-couro-personalizada", "necessaire-cristal-personalizada"],
   dataPublicacao: "2026-02-28T16:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -318,6 +327,7 @@ const erros: Post = {
     "Os erros mais comuns na hora de pedir necessaire ou porta-fone personalizado — e como evitá-los antes de fechar o pedido.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "necessaire",
+  imagemCapa: getImagemProduto("necessaire-puffer-personalizada"),
   produtosRelacionados: ["necessaire-puffer-personalizada", "necessaire-cristal-personalizada", "porta-fone-personalizado"],
   dataPublicacao: "2026-02-28T17:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",

@@ -1,4 +1,5 @@
 import type { Post } from "../../posts";
+import { getImagemProduto } from "../../imagens";
 import { ctaWhatsAppHtml, produtoLink, pilarProdutoLink, categoriaLink } from "../../postBlocks";
 
 const linkCategoria = categoriaLink("Relógios Personalizados", "relogio");
@@ -15,6 +16,7 @@ const preco: Post = {
     "Como funciona o preço do relógio de azulejo personalizado por quantidade, o que influencia o valor e como pedir um orçamento certeiro.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "relogio",
+  imagemCapa: getImagemProduto("relogio-azulejo-personalizado"),
   produtosRelacionados: ["relogio-azulejo-personalizado"],
   dataPublicacao: "2026-02-23T09:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -49,6 +51,7 @@ const comparacaoTecnicas: Post = {
     "Por que o relógio de azulejo personalizado usa sublimação em vez de adesivo ou impressão comum, e o que isso significa para a durabilidade da peça.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "relogio",
+  imagemCapa: getImagemProduto("relogio-azulejo-personalizado"),
   produtosRelacionados: ["relogio-azulejo-personalizado"],
   dataPublicacao: "2026-02-23T10:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -83,6 +86,7 @@ const guiaOcasiao: Post = {
     "Como escolher a foto e planejar o pedido de relógio de azulejo personalizado para presente de casamento ou aniversário.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "relogio",
+  imagemCapa: getImagemProduto("relogio-azulejo-personalizado"),
   produtosRelacionados: ["relogio-azulejo-personalizado"],
   dataPublicacao: "2026-02-23T11:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -121,6 +125,7 @@ const b2b: Post = {
     "Como usar o relógio de azulejo personalizado como prêmio de reconhecimento interno ou lembrança para parceiros de negócio.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "relogio",
+  imagemCapa: getImagemProduto("relogio-azulejo-personalizado"),
   produtosRelacionados: ["relogio-azulejo-personalizado"],
   dataPublicacao: "2026-02-23T12:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -159,6 +164,7 @@ const b2c: Post = {
     "Como pedir o relógio de azulejo personalizado em pequena quantidade, dividindo o pedido mínimo entre amigos ou família.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "relogio",
+  imagemCapa: getImagemProduto("relogio-azulejo-personalizado"),
   produtosRelacionados: ["relogio-azulejo-personalizado"],
   dataPublicacao: "2026-02-23T13:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -204,6 +210,7 @@ const cuidados: Post = {
     "Dicas de limpeza, manuseio e troca de pilha para preservar o relógio de azulejo personalizado por muitos anos.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "relogio",
+  imagemCapa: getImagemProduto("relogio-azulejo-personalizado"),
   produtosRelacionados: ["relogio-azulejo-personalizado"],
   dataPublicacao: "2026-02-23T14:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -246,6 +253,7 @@ const comoEscolher: Post = {
     "Dicas práticas para escolher a foto ou arte ideal para o relógio de azulejo personalizado, considerando resolução, composição e posição do mecanismo.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "relogio",
+  imagemCapa: getImagemProduto("relogio-azulejo-personalizado"),
   produtosRelacionados: ["relogio-azulejo-personalizado"],
   dataPublicacao: "2026-02-23T15:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -284,6 +292,7 @@ const sustentabilidade: Post = {
     "Por que um relógio de azulejo personalizado tende a durar mais e gerar menos desperdício que presentes descartáveis ou de baixa durabilidade.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "relogio",
+  imagemCapa: getImagemProduto("relogio-azulejo-personalizado"),
   produtosRelacionados: ["relogio-azulejo-personalizado"],
   dataPublicacao: "2026-02-23T16:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
@@ -326,6 +335,7 @@ const erros: Post = {
     "Os erros mais comuns na hora de comprar o relógio de azulejo personalizado — e como evitá-los antes de fechar o pedido.",
   tipo: "complementar-categoria",
   categoriaRelacionada: "relogio",
+  imagemCapa: getImagemProduto("relogio-azulejo-personalizado"),
   produtosRelacionados: ["relogio-azulejo-personalizado"],
   dataPublicacao: "2026-02-23T17:00:00-03:00",
   dataAtualizacao: "2026-08-21T09:00:00-03:00",
