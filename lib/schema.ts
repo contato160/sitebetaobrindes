@@ -133,26 +133,7 @@ export function howToSchema(howTo: { titulo: string; passos: string[] }) {
 }
 
 export function productSchema(produto: Produto, categoria: Categoria, imagemUrl?: string) {
-  const offer: Record<string, unknown> = {
-    "@type": "Offer",
-    availability: "https://schema.org/InStock",
-    url: `${SITE_URL}/produtos/${produto.slug}/`,
-    priceCurrency: "BRL",
-    itemCondition: "https://schema.org/NewCondition",
-  };
-
-  if (produto.precos && produto.precos.length > 0) {
-    const menorPreco = [...produto.precos].sort(
-      (a, b) => a.precoUnitario - b.precoUnitario
-    )[0];
-    offer.price = menorPreco.precoUnitario;
-    offer.eligibleQuantity = {
-      "@type": "QuantitativeValue",
-      minValue: menorPreco.quantidade,
-    };
-  }
-
-  return {
+  const base = {
     "@type": "Product",
     "@id": `${SITE_URL}/produtos/${produto.slug}/#product`,
     name: produto.nome,
@@ -162,6 +143,30 @@ export function productSchema(produto: Produto, categoria: Categoria, imagemUrl?
     category: categoria.nome,
     brand: { "@id": `${SITE_URL}/#organization` },
     image: imagemUrl ? [imagemUrl] : undefined,
-    offers: offer,
+  };
+
+  // Sem faixa de preço cadastrada (produto "sob consulta"): omitir offers por
+  // completo. Um Offer sem price não passa na validação de rich results do
+  // Google, e inventar um preço aqui seria pior do que não declarar oferta.
+  if (!produto.precos || produto.precos.length === 0) {
+    return base;
+  }
+
+  const precosOrdenados = [...produto.precos].sort((a, b) => a.precoUnitario - b.precoUnitario);
+  const menorPreco = precosOrdenados[0];
+  const maiorPreco = precosOrdenados[precosOrdenados.length - 1];
+
+  return {
+    ...base,
+    offers: {
+      "@type": "AggregateOffer",
+      priceCurrency: "BRL",
+      lowPrice: menorPreco.precoUnitario,
+      highPrice: maiorPreco.precoUnitario,
+      offerCount: produto.precos.length,
+      availability: "https://schema.org/InStock",
+      url: `${SITE_URL}/produtos/${produto.slug}/`,
+      itemCondition: "https://schema.org/NewCondition",
+    },
   };
 }
