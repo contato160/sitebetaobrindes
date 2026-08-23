@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-ink px-8 pb-8 pt-16 text-paper-2">
       <div className="mx-auto grid max-w-wrap grid-cols-2 gap-10 md:grid-cols-4 md:[grid-template-columns:1.4fr_1fr_1fr_1fr]">
-        <div>
+        <div className="min-w-0">
           <div className="mb-[14px]">
             <Logo dark />
           </div>
@@ -19,12 +19,12 @@ export default function Footer() {
           </a>
           <a
             href={`mailto:${NEGOCIO.email}`}
-            className="mb-[9px] block text-[13px] text-paper-2/72 hover:text-paper-2"
+            className="mb-[9px] block break-words text-[13px] text-paper-2/72 hover:text-paper-2"
           >
             {NEGOCIO.email}
           </a>
         </div>
-        <div>
+        <div className="min-w-0">
           <h5 className="mb-4 text-xs font-semibold uppercase tracking-[0.06em] text-brass">
             Categorias
           </h5>
