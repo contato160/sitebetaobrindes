@@ -1,5 +1,5 @@
 import type { Post } from "../../posts";
-import { ctaWhatsAppHtml, produtoLink } from "../../postBlocks";
+import { ctaWhatsAppHtml, produtoLink, categoriaLink } from "../../postBlocks";
 import { getImagemProduto } from "../../imagens";
 
 export const relogioPilarCategoria: Post = {
@@ -83,7 +83,7 @@ export const relogioPilarCategoria: Post = {
 
 <h2>Relógio de azulejo x outros brindes personalizados do catálogo</h2>
 
-<p>Vale comparar antes de decidir: se o objetivo é alcançar muita gente com um brinde de uso diário (equipe, hóspedes, participantes de evento), os ${produtoLink("térmicos e garrafas", "guia-completo-termicos-garrafas-personalizadas")} ou as bolsas personalizadas tendem a ser mais eficientes, por terem pedido mínimo mais fácil de escoar e uso mais frequente. Já quando o objetivo é uma peça única, afetiva, para presentear uma pessoa ou reconhecer um marco específico, o relógio de azulejo tem um apelo que nenhum brinde de distribuição em massa reproduz — é pensado para durar na parede, não para acompanhar o dia a dia como um copo térmico.</p>
+<p>Vale comparar antes de decidir: se o objetivo é alcançar muita gente com um brinde de uso diário (equipe, hóspedes, participantes de evento), os ${categoriaLink("térmicos e garrafas", "termicos")} ou as bolsas personalizadas tendem a ser mais eficientes, por terem pedido mínimo mais fácil de escoar e uso mais frequente. Já quando o objetivo é uma peça única, afetiva, para presentear uma pessoa ou reconhecer um marco específico, o relógio de azulejo tem um apelo que nenhum brinde de distribuição em massa reproduz — é pensado para durar na parede, não para acompanhar o dia a dia como um copo térmico.</p>
 
 <p>Comparado a alternativas fora do catálogo — como quadros de foto comuns ou molduras digitais — o relógio de azulejo tem duas vantagens claras: durabilidade (a imagem por sublimação não desbota como uma foto impressa em papel fotográfico comum, mesmo exposta à luz por anos) e dupla função (decoração mais utilidade, já que também marca a hora). A contrapartida é o custo por unidade, naturalmente mais alto que uma foto impressa simples emoldurada — o que reforça seu papel de presente de ocasião específica, não de item de compra recorrente ou impulsiva.</p>
 
