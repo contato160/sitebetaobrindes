@@ -27,17 +27,25 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const descricao =
     produto.descricaoCurta ||
     `${produto.nome} — brinde personalizado para empresas, pousadas e pessoa física. Pedido mínimo de ${produto.pedidoMinimo || 20} unidades.`;
+  const imagens = imagem
+    ? [{ url: `https://${NEGOCIO.dominio}${imagem}`, width: 1200, height: 630 }]
+    : [{ url: "/og-cover.svg", width: 1200, height: 630 }];
   return {
-    title: `${produto.nome} — Brinde Corporativo`,
+    title: produto.nome,
     description: descricao,
     alternates: { canonical: url },
     openGraph: {
       url,
       title: produto.nome,
       description: descricao,
-      images: imagem
-        ? [`https://${NEGOCIO.dominio}${imagem}`]
-        : [{ url: "/og-cover.svg", width: 1200, height: 630 }],
+      type: "website",
+      images: imagens,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: produto.nome,
+      description: descricao,
+      images: imagens.map((i) => i.url),
     },
   };
 }

@@ -41,6 +41,13 @@ export const metadata: Metadata = {
     type: "website",
     images: [{ url: "/og-cover.svg", width: 1200, height: 630 }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `${NEGOCIO.nome} — Brindes Personalizados para Empresas e Pousadas`,
+    description:
+      "Catálogo com mais de 70 brindes personalizados — bolsas, canecas, squeezes, porta-documentos e mais. Peça em lote para empresas e pousadas ou em pequenas quantidades pelo WhatsApp.",
+    images: ["/og-cover.svg"],
+  },
   verification: {
     google: "qjx451OCX0fl_zwd-yPGOYf7ealYjnJmu8zeav9wWg8",
   },

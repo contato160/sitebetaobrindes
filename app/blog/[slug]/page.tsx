@@ -22,15 +22,25 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   if (!post) return {};
   const imagem = imagemDoPost(post);
   const url = `https://${NEGOCIO.dominio}/blog/${post.slug}/`;
+  const imagens = imagem
+    ? [{ url: `https://${NEGOCIO.dominio}${imagem}`, width: 1200, height: 630 }]
+    : [{ url: "/og-cover.svg", width: 1200, height: 630 }];
   return {
-    title: post.titulo,
+    title: { absolute: post.titulo },
     description: post.descricao,
     alternates: { canonical: url },
     openGraph: {
       url,
-      images: imagem
-        ? [`https://${NEGOCIO.dominio}${imagem}`]
-        : [{ url: "/og-cover.svg", width: 1200, height: 630 }],
+      title: post.titulo,
+      description: post.descricao,
+      type: "article",
+      images: imagens,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.titulo,
+      description: post.descricao,
+      images: imagens.map((i) => i.url),
     },
   };
 }
