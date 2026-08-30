@@ -33,6 +33,7 @@ Allow: /
 # *
 User-agent: *
 Allow: /
+Disallow: /*?_rsc=*
 
 # Host
 Host: https://essenzabrindes.com.br

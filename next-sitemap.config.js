@@ -14,7 +14,7 @@ module.exports = {
       { userAgent: "Googlebot-Extended", allow: "/" },
       { userAgent: "Applebot-Extended", allow: "/" },
       { userAgent: "Bytespider", allow: "/" },
-      { userAgent: "*", allow: "/" },
+      { userAgent: "*", allow: "/", disallow: ["/*?_rsc=*"] },
     ],
     additionalSitemaps: [],
   },
