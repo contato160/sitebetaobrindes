@@ -11,6 +11,8 @@ const newsreader = Newsreader({
   weight: ["400", "500"],
   variable: "--font-newsreader",
   display: "swap",
+  fallback: ["Georgia", "Times New Roman", "serif"],
+  adjustFontFallback: false,
 });
 
 const workSans = Work_Sans({
