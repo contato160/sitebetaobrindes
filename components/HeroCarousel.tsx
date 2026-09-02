@@ -29,9 +29,12 @@ export default function HeroCarousel({ slides }: { slides: SlideProduto[] }) {
   // o embaralhamento real só acontece no cliente, depois de montado.
   const orderRef = useRef<number[]>(Array.from({ length: n }, (_, i) => i));
   const posRef = useRef(0);
-  const [active, setActive] = useState(orderRef.current[0] ?? 0);
+  // orderRef começa como [0,1,2,...], então o índice 0 é sempre a peça
+  // inicial antes do embaralhamento no cliente — usa o literal em vez de
+  // ler o ref durante a renderização.
+  const [active, setActive] = useState(0);
   const [failedImg, setFailedImg] = useState<Record<number, boolean>>({});
-  const firstPriorityIdx = orderRef.current[0] ?? 0;
+  const firstPriorityIdx = 0;
 
   useEffect(() => {
     orderRef.current = shuffledOrder(n);
