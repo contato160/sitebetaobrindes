@@ -19,7 +19,8 @@ export function generateStaticParams() {
   return produtos.map((p) => ({ slug: p.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const params = await props.params;
   const produto = getProduto(params.slug);
   if (!produto) return {};
   const url = `https://${NEGOCIO.dominio}/produtos/${produto.slug}/`;
@@ -50,7 +51,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function ProdutoPage({ params }: { params: { slug: string } }) {
+export default async function ProdutoPage(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const produto = getProduto(params.slug);
   if (!produto) notFound();
 

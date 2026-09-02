@@ -16,7 +16,8 @@ export function generateStaticParams() {
   return categorias.map((c) => ({ slug: c.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const params = await props.params;
   const categoria = getCategoria(params.slug);
   if (!categoria) return {};
   const url = `https://${NEGOCIO.dominio}/categorias/${categoria.slug}/`;
@@ -40,7 +41,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function CategoriaPage({ params }: { params: { slug: string } }) {
+export default async function CategoriaPage(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const categoria = getCategoria(params.slug);
   if (!categoria) notFound();
 
